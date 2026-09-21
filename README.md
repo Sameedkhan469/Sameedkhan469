@@ -127,13 +127,24 @@ flowchart LR
 ## 📈 GitHub Statistics
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Sameedkhan469&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sameedkhan469&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
+
+<img src="https://github-readme-stats.vercel.app/api?username=Sameedkhan469&show_icons=true&theme=tokyonight&hide_border=true" />
+
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Sameedkhan469&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Sameedkhan469&theme=tokyonight&hide_border=true" />
+
 </p>
+
+---
+
+## 🐍 Snake Game Repo View
+
+<div align="center">
+  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
+</div>
 
 ---
 
