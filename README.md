@@ -69,11 +69,11 @@ flowchart LR
 
 | Project | Description | Tech |
 |:--|:--|:--|
-| 🏗️ **[Terraform Three-Tier Architecture](https://github.com/Sameedkhan469?tab=repositories)** | Production-style three-tier AWS infrastructure provisioned entirely with Terraform modules. | `AWS` `Terraform` `VPC` `ALB` `EC2` `RDS` |
+| 🐧 **[Linux Commands](https://github.com/Sameedkhan469/Linux-commands)** | Complete Linux command reference from beginner to advanced, covering file management, permissions, processes, networking, storage, AWS EBS/EFS, monitoring, systemd, shell scripting, logging, and DevOps commands. | `Linux` `Bash` `AWS` `DevOps` |
+| 🏗️ **[Terraform Three-Tier Architecture](https://github.com/Sameedkhan469?tab=repositories)** | Three-tier AWS infrastructure provisioned using Terraform, including VPC, subnets, load balancer, EC2, security groups, and RDS. | `AWS` `Terraform` `VPC` `ALB` `EC2` `RDS` |
 | 📦 **[Terraform Modules](https://github.com/Sameedkhan469?tab=repositories)** | Reusable infrastructure using root, child, and Terraform Registry modules with variables and outputs. | `Terraform` `Modules` `IaC` |
 | ⚙️ **[Terraform Provisioners](https://github.com/Sameedkhan469?tab=repositories)** | EC2 automation using `local-exec` and `remote-exec` provisioners. | `Terraform` `EC2` `Automation` |
-| 🐳 **[Docker Projects](https://github.com/Sameedkhan469?tab=repositories)** | Hands-on containerization and multi-container apps with Docker Compose. | `Docker` `Docker Compose` |
-
+| 🐳 **[Docker Projects](https://github.com/Sameedkhan469?tab=repositories)** | Hands-on containerization and multi-container applications using Docker and Docker Compose. | `Docker` `Docker Compose` |
 <details>
 <summary><b>🏗️ Three-Tier Architecture: what's inside</b></summary>
 <br/>
