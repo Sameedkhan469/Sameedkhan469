@@ -74,6 +74,7 @@ flowchart LR
 | 📦 **[Terraform Modules](https://github.com/Sameedkhan469?tab=repositories)** | Reusable infrastructure using root, child, and Terraform Registry modules with variables and outputs. | `Terraform` `Modules` `IaC` |
 | ⚙️ **[Terraform Provisioners](https://github.com/Sameedkhan469?tab=repositories)** | EC2 automation using `local-exec` and `remote-exec` provisioners. | `Terraform` `EC2` `Automation` |
 | 🐳 **[Docker Projects](https://github.com/Sameedkhan469?tab=repositories)** | Hands-on containerization and multi-container applications using Docker and Docker Compose. | `Docker` `Docker Compose` |
+ | 🛒 **[E-Commerce Platform on AWS](https://github.com/Sameedkhan469/sameed-ecommerce-aws-terraform)** | Multi-tier AWS e-commerce app deployed with Terraform — Nginx frontend, Flask backend, and RDS MySQL across public/private subnets. | `AWS` `Terraform` `EC2` `RDS` `Nginx` `Flask` |
 <details>
 <summary><b>🏗️ Three-Tier Architecture: what's inside</b></summary>
 <br/>
