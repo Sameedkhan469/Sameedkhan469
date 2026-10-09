@@ -75,6 +75,7 @@ flowchart LR
 | ⚙️ **[Terraform Provisioners](https://github.com/Sameedkhan469?tab=repositories)** | EC2 automation using `local-exec` and `remote-exec` provisioners. | `Terraform` `EC2` `Automation` |
  | 🛒 **[E-Commerce Platform on AWS](https://github.com/Sameedkhan469/sameed-ecommerce-aws-terraform)** | Multi-tier AWS e-commerce app deployed with Terraform — Nginx frontend, Flask backend, and RDS MySQL across public/private subnets. | `AWS` `Terraform` `EC2` `RDS` `Nginx` `Flask` |
  | 🚀 [**Jenkins CI/CD Practice**](https://github.com/Sameedkhan469/-jenkins-cicd-practice) | Hands-on Jenkins CI/CD project with a declarative Jenkinsfile, Build–Test–Deploy pipeline, GitHub integration, and AWS infrastructure provisioned using Terraform. | `Jenkins` `CI/CD` `Terraform` `AWS` `GitHub` |
+| 📊 [AWS EC2 Monitoring with Prometheus & Grafana](https://github.com/Sameedkhan469/Grafana-Prometheus) | Provisioned AWS infrastructure using Terraform and configured Prometheus, Node Exporter, and Grafana to monitor CPU, memory, disk usage, and server availability. | `AWS` `Terraform` `Prometheus` `Grafana` `Linux` |
 
 </details>
 
@@ -107,12 +108,11 @@ flowchart LR
 
 - [x] Build AWS infrastructure using Terraform modules
 - [x] Practice Docker and Docker Compose
-- [ ] Build end-to-end CI/CD pipelines with Jenkins and GitHub Actions
-- [ ] Deploy and manage workloads on Kubernetes and AWS EKS
-- [ ] Set up monitoring dashboards with Prometheus and Grafana
-- [ ] Build real-world, production-style DevOps projects
-- [ ] Strengthen multi-cloud knowledge across AWS, Azure, and GCP
-
+- [x] Set up monitoring dashboards with Prometheus and Grafana
+- [x] Build real-world, production-style DevOps projects
+- [x] Strengthen multi-cloud knowledge across AWS, Azure, and GCP
+- [ ] Deploy and manage workloads on Kubernetes and AWS EKS 
+- [ ]  Build end-to-end CI/CD pipelines with Jenkins and GitHub Actions
 ---
 
 ## 📈 GitHub Statistics
