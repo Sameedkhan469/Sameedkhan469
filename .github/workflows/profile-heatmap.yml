@@ -40,7 +40,7 @@ jobs:
       - name: Render heatmap, snake and statistics cards
         env:
           GH_USERNAME: Sameedkhan469
-          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/build-profile-visuals.mjs
       - name: Commit changed snapshot and generated visuals
         run: |
