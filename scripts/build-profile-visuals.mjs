@@ -8,6 +8,22 @@ import fs from "node:fs";
 import path from "node:path";
 
 const INPUT = process.env.INPUT_PATH || "site/data/contributions.json";
+const HERO_PATH = "assets/sameed-hero.svg";
+const AVATAR_PATH = "assets/sameed-avatar.png";
+function embedProfileAvatar() {
+  if (!fs.existsSync(AVATAR_PATH) || !fs.existsSync(HERO_PATH)) {
+    console.warn("Profile avatar or hero template missing; leaving hero artwork unchanged.");
+    return;
+  }
+  const image = fs.readFileSync(AVATAR_PATH);
+  const mime = image[0] === 0x89 && image[1] === 0x50 ? "image/png" : image[0] === 0xff && image[1] === 0xd8 ? "image/jpeg" : "image/png";
+  const dataUri = "data:" + mime + ";base64," + image.toString("base64");
+  let hero = fs.readFileSync(HERO_PATH, "utf8");
+  const imageTag = '<image href="' + dataUri + '" xlink:href="' + dataUri + '" x="850" y="90" width="240" height="240" preserveAspectRatio="xMidYMid slice"/>';
+  hero = hero.replace(/<image\\b[^>]*\\/>/, imageTag);
+  fs.writeFileSync(HERO_PATH, hero, "utf8");
+  console.log("Embedded GitHub profile avatar into " + HERO_PATH + ".");
+}
 const HEATMAP_OUTPUTS = ["assets/contribution-heatmap.svg", "site/assets/img/contribution-heatmap.svg"];
 const STATS_OUTPUTS = ["assets/github-stats.svg", "site/assets/img/github-stats.svg"];
 const LOGIN = process.env.GH_USERNAME || "Sameedkhan469";
@@ -139,7 +155,7 @@ for (let week = 0; week < weekCount; week += 1) {
     let eat = "";
     if (day && Number(day.count) > 0) {
       const keyTime = Math.min(0.94, (keyIndexForDay(day.index) * cellTime) / loopTime).toFixed(4);
-      eat = "<animate attributeName=\"fill\" dur=\"" + loopTime.toFixed(2) + "s\" begin=\"" + startDelay + "s\" repeatCount=\"indefinite\" calcMode=\"discrete\" keyTimes=\"0;" + keyTime + "\" values=\"" + fill + ";" + PALETTE[0] + "\"/>";
+      eat = "<animate attributeName=\"fill\" dur=\"" + loopTime.toFixed(2) + "s\" begin=\"" + startDelay + "s\" repeatCount=\"indefinite\" calcMode=\"discrete\" keyTimes=\"0;" + keyTime + ";1\" values=\"" + fill + ";" + PALETTE[0] + ";" + PALETTE[0] + "\"/>";
     }
     cells.push("<rect class=\"hm-cell\" style=\"animation-delay:" + delay + "s\" x=\"" + x + "\" y=\"" + y + "\" width=\"" + CELL + "\" height=\"" + CELL + "\" rx=\"3\" fill=\"" + fill + "\"><title>" + escapeXml(title) + "</title>" + eat + "</rect>");
   }
@@ -179,7 +195,7 @@ for (let index = 0; index < 9; index += 1) {
   const eyes = segment === 0
     ? "<circle cx=\"" + (size / 2 - 3.2).toFixed(1) + "\" cy=\"-2\" r=\"1.05\" fill=\"#10070C\"/><circle cx=\"" + (size / 2 - 3.2).toFixed(1) + "\" cy=\"2\" r=\"1.05\" fill=\"#10070C\"/>"
     : "";
-  snake.push("<g opacity=\"0\"><animateMotion path=\"" + routeD + "\" rotate=\"auto\" dur=\"" + loopTime.toFixed(2) + "s\" begin=\"" + begin + "s\" repeatCount=\"indefinite\" calcMode=\"linear\" keyPoints=\"0;1;1\" keyTimes=\"0;" + travelFraction.toFixed(4) + ";1\"/><animate attributeName=\"opacity\" values=\"" + opacity + ";0\" keyTimes=\"0;" + travelFraction.toFixed(4) + "\" calcMode=\"discrete\" dur=\"" + loopTime.toFixed(2) + "s\" begin=\"" + begin + "s\" repeatCount=\"indefinite\"/><rect x=\"" + (-size / 2).toFixed(1) + "\" y=\"" + (-size / 2).toFixed(1) + "\" width=\"" + size.toFixed(1) + "\" height=\"" + size.toFixed(1) + "\" rx=\"" + (size / 2.5).toFixed(1) + "\" fill=\"" + fill + "\"/>" + eyes + "</g>");
+  snake.push("<g opacity=\"0\"><animateMotion path=\"" + routeD + "\" rotate=\"auto\" dur=\"" + loopTime.toFixed(2) + "s\" begin=\"" + begin + "s\" repeatCount=\"indefinite\" calcMode=\"linear\" keyPoints=\"0;1;1\" keyTimes=\"0;" + travelFraction.toFixed(4) + ";1\"/><animate attributeName=\"opacity\" values=\"" + opacity + ";0;0\" keyTimes=\"0;" + travelFraction.toFixed(4) + ";1\" calcMode=\"linear\" dur=\"" + loopTime.toFixed(2) + "s\" begin=\"" + begin + "s\" repeatCount=\"indefinite\"/><rect x=\"" + (-size / 2).toFixed(1) + "\" y=\"" + (-size / 2).toFixed(1) + "\" width=\"" + size.toFixed(1) + "\" height=\"" + size.toFixed(1) + "\" rx=\"" + (size / 2.5).toFixed(1) + "\" fill=\"" + fill + "\"/>" + eyes + "</g>");
 }
 const legendX = 1033;
 const legend = PALETTE.map((color, index) => "<rect x=\"" + (legendX + index * 18) + "\" y=\"382\" width=\"12\" height=\"11\" rx=\"3\" fill=\"" + color + "\"/>").join("");
@@ -203,6 +219,7 @@ const heatmapSvg = [
 "<g class=\"hm-fade\"><text class=\"hm-mono\" x=\"" + GRID_X + "\" y=\"" + (GRID_Y + 7 * STEP + 23) + "\" font-size=\"10.5\" letter-spacing=\"1.25\" fill=\"#E5B5C7\">" + escapeXml(streakText) + "</text><text class=\"hm-mono\" x=\"54\" y=\"393\" font-size=\"9.5\" fill=\"#8F737E\">Source: public GitHub contribution calendar for @" + escapeXml(snapshot.login || LOGIN) + " · refreshed " + escapeXml(fetched) + "</text><text class=\"hm-mono\" x=\"990\" y=\"393\" font-size=\"9.5\" fill=\"#B6A3AC\">Less</text>" + legend + "<text class=\"hm-mono\" x=\"1142\" y=\"393\" font-size=\"9.5\" fill=\"#B6A3AC\">More</text></g></svg>"
 ].join("\n");
 writeOutputs(HEATMAP_OUTPUTS, heatmapSvg);
+embedProfileAvatar();
 
 async function getRepoStats() {
   const headers = { "Accept": "application/vnd.github+json", "User-Agent": "sameed-profile-visuals" };
