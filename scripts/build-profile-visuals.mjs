@@ -10,6 +10,32 @@ import path from "node:path";
 const INPUT = process.env.INPUT_PATH || "site/data/contributions.json";
 const HERO_PATH = "assets/sameed-hero.svg";
 const AVATAR_PATH = "assets/sameed-avatar.png";
+const HERO_DARK_OUTPUT = "assets/sameed-hero-dark.svg";
+const HERO_LIGHT_OUTPUT = "assets/sameed-hero-light.svg";
+
+function writeHeroThemeVariants() {
+  if (!fs.existsSync(HERO_PATH)) return;
+  const darkHero = fs.readFileSync(HERO_PATH, "utf8");
+  fs.writeFileSync(HERO_DARK_OUTPUT, darkHero, "utf8");
+  const lightPalette = {
+    "#190B12": "#FFF9FB",
+    "#130810": "#F6EDF1",
+    "#10070C": "#FFFAFC",
+    "#F8F0F3": "#190B12",
+    "#B6A3AC": "#67535E",
+    "#8F737E": "#7D5C69",
+    "#E5B5C7": "#8A234D",
+    "#C77B9B": "#A5446B",
+    "#701A3D": "#8B204A",
+    "#451126": "#EBD7E0",
+    "#6C2945": "#C99FB0",
+    "#A12556": "#701A3D"
+  };
+  const lightHero = darkHero.replace(/#[0-9A-Fa-f]{6}/g, (color) => lightPalette[color.toUpperCase()] || color);
+  fs.writeFileSync(HERO_LIGHT_OUTPUT, lightHero, "utf8");
+  console.log("Wrote light/dark hero variants for GitHub theme preferences.");
+}
+
 function embedProfileAvatar() {
   if (!fs.existsSync(AVATAR_PATH) || !fs.existsSync(HERO_PATH)) {
     console.warn("Profile avatar or hero template missing; leaving hero artwork unchanged.");
@@ -222,6 +248,7 @@ const heatmapSvg = [
 ].join("\n");
 writeOutputs(HEATMAP_OUTPUTS, heatmapSvg);
 embedProfileAvatar();
+writeHeroThemeVariants();
 
 async function getRepoStats() {
   const headers = { "Accept": "application/vnd.github+json", "User-Agent": "sameed-profile-visuals" };
