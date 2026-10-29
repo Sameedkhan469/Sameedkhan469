@@ -53,6 +53,10 @@
 <img src="assets/tech-constellation.svg" width="100%" alt="Skills overview: AWS and Terraform, Jenkins and Maven, Prometheus, Grafana and Splunk, Linux and Windows, Bash, Python, Boto3, Nginx, Flask, MySQL and networking.">
 
 <img src="assets/title-commits.svg" width="100%" alt="05 Contribution log — a little progress, committed.">
+
+<p align="center">
+  <img src="assets/github-jet.svg" width="75%" alt="Animated burgundy jet heatmap flying across real GitHub activity, with animated projectiles and bursts on high-activity contribution days.">
+</p>
 <a href="https://github.com/Sameedkhan469">
   <img src="assets/contribution-heatmap.svg" width="100%" alt="Real GitHub contribution heatmap for Sameed Khan, with a moving snake and statistics generated from the public contribution calendar.">
 </a>
