@@ -1,5 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" width="1200" height="510" role="img" aria-label="Sameed Khan technology toolkit: AWS, Terraform, Jenkins, Maven, Prometheus, Grafana, Splunk, Linux, Windows, Bash, Python, Boto3, networking, Nginx, Flask and MySQL">
-<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient><radialGradient id="glow"><stop stop-color="#451126" stop-opacity=".85"/><stop offset="1" stop-color="#10070C" stop-opacity="0"/></radialGradient></defs><style>.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}.card{fill:#190B12;stroke:#701A3D;stroke-width:1.2}.tag{fill:#451126;stroke:#C77B9B;stroke-opacity:.6}.label{fill:#E5B5C7;font-size:12px;letter-spacing:1.5px}.item{fill:#F8F0F3;font-size:15px}.sub{fill:#B6A3AC;font-size:12px}</style>
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient><radialGradient id="glow"><stop stop-color="#451126" stop-opacity=".85"/><stop offset="1" stop-color="#10070C" stop-opacity="0"/></radialGradient>
+  <linearGradient id="fx-sheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#E5B5C7" stop-opacity="0"/>
+    <stop offset=".48" stop-color="#E5B5C7" stop-opacity=".20"/>
+    <stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
+  </linearGradient>
+  <clipPath id="fx-panel-clip"><rect x="0" y="0" width="1200" height="510" rx="20"/></clipPath>
+  <filter id="fx-panel-glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="1.8" result="glow"/>
+    <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs><style>.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}.card{fill:#190B12;stroke:#701A3D;stroke-width:1.2}.tag{fill:#451126;stroke:#C77B9B;stroke-opacity:.6}.label{fill:#E5B5C7;font-size:12px;letter-spacing:1.5px}.item{fill:#F8F0F3;font-size:15px}.sub{fill:#B6A3AC;font-size:12px}</style>
 <rect width="1200" height="510" rx="20" fill="url(#bg)" stroke="#C77B9B" stroke-opacity=".28"/><rect width="1200" height="510" rx="20" fill="url(#glow)" opacity=".45"/>
 <g transform="translate(28 28)"><rect class="card" width="555" height="132" rx="14"/><text class="m label" x="20" y="28">01 / CLOUD &amp; INFRASTRUCTURE</text><text class="serif" x="20" y="61" fill="#F8F0F3" font-size="23">AWS + Terraform</text><text class="s item" x="20" y="88">EC2 · VPC · subnets · routing · ALB · RDS</text><text class="s item" x="20" y="112">IAM roles · S3 · Lambda · Systems Manager</text><text class="m sub" x="20" y="130">IaC modules · state concepts · count / for_each</text></g>
 <g transform="translate(617 28)"><rect class="card" width="555" height="132" rx="14"/><text class="m label" x="20" y="28">02 / BUILD &amp; DELIVERY</text><text class="serif" x="20" y="61" fill="#F8F0F3" font-size="23">Jenkins + Maven + GitHub</text><text class="s item" x="20" y="88">Jenkinsfile · build / test / package</text><text class="s item" x="20" y="112">Webhooks · artifact archiving · Terraform checks</text></g>
@@ -7,4 +18,21 @@
 <g transform="translate(617 182)"><rect class="card" width="555" height="132" rx="14"/><text class="m label" x="20" y="28">04 / SYSTEMS &amp; SCRIPTING</text><text class="serif" x="20" y="61" fill="#F8F0F3" font-size="23">Linux + Windows</text><text class="s item" x="20" y="88">systemd · permissions · package management</text><text class="s item" x="20" y="112">Bash · Python · Boto3 · AWS CLI</text></g>
 <g transform="translate(28 336)"><rect class="card" width="555" height="132" rx="14"/><text class="m label" x="20" y="28">05 / APPLICATIONS &amp; DATA</text><text class="serif" x="20" y="61" fill="#F8F0F3" font-size="23">Nginx + Flask + MySQL</text><text class="s item" x="20" y="88">Reverse proxy · Python API · relational DB</text><text class="s item" x="20" y="112">EC2 bootstrap · tier-specific security groups</text></g>
 <g transform="translate(617 336)"><rect class="card" width="555" height="132" rx="14"/><text class="m label" x="20" y="28">06 / NETWORKING</text><text class="serif" x="20" y="61" fill="#F8F0F3" font-size="23">Connectivity &amp; diagnostics</text><text class="s item" x="20" y="88">TCP/IP · DNS · DHCP · SSH · HTTP/HTTPS</text><text class="s item" x="20" y="112">Routing · switching · LAN/WAN · CIDR · NAT</text></g>
-<text class="m sub" x="28" y="495">VERIFIED FROM CURRENT CV AND PUBLIC PROJECTS · ADVANCED TOOLS ARE NOT MARKED AS COMPLETED HERE</text></svg>
+<text class="m sub" x="28" y="495">VERIFIED FROM CURRENT CV AND PUBLIC PROJECTS · ADVANCED TOOLS ARE NOT MARKED AS COMPLETED HERE</text>
+  <style>
+    .fx-motion { pointer-events:none; }
+    @media (prefers-reduced-motion: reduce) { .fx-motion { display:none; } }
+  </style>
+  <g class="fx-motion" clip-path="url(#fx-panel-clip)" pointer-events="none">
+    <rect x="-280" y="0" width="280" height="510" fill="url(#fx-sheen)" opacity=".62">
+      <animate attributeName="x" values="-280;1200;1200" keyTimes="0;.72;1" dur="9.5s" begin="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1.5" y="1.5" width="1197" height="507" rx="19" fill="none" stroke="#C77B9B" stroke-opacity=".54" stroke-width="1.15" stroke-dasharray="58 3420">
+      <animate attributeName="stroke-dashoffset" values="0;-3420" dur="24s" repeatCount="indefinite"/>
+    </rect>
+    <circle r="2.2" fill="#F8F0F3" filter="url(#fx-panel-glow)">
+      <animateMotion path="M 20 1 H 1180 Q 1199 1 1199 20 V 490 Q 1199 509 1180 509 H 20 Q 1 509 1 490 V 20 Q 1 1 20 1" dur="17s" begin=".8s" repeatCount="indefinite" rotate="auto"/>
+      <animate attributeName="opacity" values=".15;1;.3;1;.15" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
