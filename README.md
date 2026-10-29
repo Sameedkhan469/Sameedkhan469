@@ -1,136 +1,93 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./light.svg">
-  <img alt="Sameed Khan — AWS DevOps, Systems Administration and Networking" src="./light.svg" width="100%">
-</picture>
+<a href="https://github.com/Sameedkhan469">
+  <img src="assets/sameed-hero.svg" width="100%" alt="Sameed Khan — AWS DevOps, systems administration and networking. Build infrastructure, automate delivery and monitor systems.">
+</a>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=1200&color=36BCF7&center=true&vCenter=true&width=760&lines=AWS+DevOps+%7C+Terraform+Infrastructure+as+Code;Jenkins+CI%2FCD+%7C+Maven+Build+Pipelines;Prometheus+%7C+Grafana+%7C+Splunk;Systems+Administration+%7C+Networking" alt="Typing animation" />
+  <a href="https://www.linkedin.com/in/sameed-khan-a6824538a/"><img src="https://img.shields.io/badge/LinkedIn-Sameed_Khan-701A3D?style=for-the-badge&labelColor=190B12&logo=linkedin&logoColor=F8F0F3" alt="LinkedIn — Sameed Khan"></a>
+  <a href="https://github.com/Sameedkhan469?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore_projects-701A3D?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="GitHub repositories"></a>
+  <a href="mailto:sameedkhan0469@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_me-701A3D?style=for-the-badge&labelColor=190B12&logo=gmail&logoColor=F8F0F3" alt="Email Sameed Khan"></a>
+  <img src="https://komarev.com/ghpvc/?username=Sameedkhan469&label=Profile%20Views&color=701A3D&style=for-the-badge" alt="Profile views">
 </p>
 
+<img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Sameed.">
+<img src="assets/about-intro.svg" width="100%" alt="About Sameed Khan: systems and networking professional focused on AWS DevOps, infrastructure as code, Jenkins automation and observability.">
+
+<img src="assets/title-foundation.svg" width="100%" alt="02 Experience and foundation">
+<img src="assets/foundation.svg" width="100%" alt="Professional foundation: Networking Engineer at F2TH Communication Private Ltd, System Administrator at DN Computers, Bachelor of Computer Applications, Diploma in Cloud Computing and AWS Solutions Architecture Job Simulation.">
+
+<img src="assets/title-work.svg" width="100%" alt="03 Selected work — infrastructure you can inspect.">
+
+<a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="assets/project-monitoring.svg" width="100%" alt="AWS EC2 monitoring with Terraform, Prometheus, Node Exporter and Grafana."></a>
 <p align="center">
-  <a href="https://www.linkedin.com/in/sameed-khan-a6824538a/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/Sameedkhan469?tab=repositories">
-    <img src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repositories" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=Sameedkhan469&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile views" />
+  <a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="https://img.shields.io/badge/Repository-EC2_Monitoring-451126?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="EC2 Monitoring repository"></a>
 </p>
 
-## About Me
-
-Hi, I'm **Sameed Khan**, a systems and networking professional building practical skills in **AWS DevOps**. My background includes Windows and Linux administration, network connectivity troubleshooting, user access and permissions, and infrastructure support. In my hands-on projects, I use **Terraform** to define AWS infrastructure, **Jenkins** to automate build and infrastructure-check pipelines, and **Prometheus + Grafana** to monitor EC2 systems.
-
-I like solving infrastructure problems step by step, documenting what I build, and improving the repeatability and security of cloud environments.
-
-## Technical Skills
-
-### AWS Cloud & Infrastructure as Code
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Amazon EC2](https://img.shields.io/badge/Amazon_EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![Amazon S3](https://img.shields.io/badge/Amazon_S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![Amazon RDS](https://img.shields.io/badge/Amazon_RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white)
-
-- **AWS:** EC2, VPC, public/private subnets, route tables, Internet Gateway, NAT Gateway, Security Groups, Application Load Balancer, RDS MySQL, IAM roles, S3, Lambda and Systems Manager.
-- **Terraform:** variables, outputs, state concepts, S3 remote-backend concepts and versioning, root/child and Registry modules, data sources, `count`, `for_each`, dynamic blocks, and `local-exec`/`remote-exec` provisioners.
-
-### CI/CD, Monitoring & Logging
-
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Splunk](https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-- **CI/CD:** Jenkins declarative pipelines/Jenkinsfile, Maven build/test/package workflow, JAR artifact archiving, GitHub webhooks, and Terraform `fmt`, `validate` and `plan` checks.
-- **Monitoring & logging:** Prometheus, Node Exporter, Grafana dashboards, CPU/memory/disk metrics, server availability, Splunk Universal Forwarder and Splunk indexer.
-
-### Systems, Scripting, Applications & Networking
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-
-- **Systems:** Linux (Ubuntu/Amazon Linux), Windows, systemd, user permissions, package management and system logs.
-- **Scripting & tools:** Bash, Python, Boto3 and AWS CLI.
-- **Applications & databases:** Nginx reverse proxy, Flask and MySQL.
-- **Networking:** TCP/IP, DNS, DHCP, HTTP/HTTPS, SSH, routing, switching, LAN/WAN, CIDR/subnetting, NAT and load balancing.
-
-## Featured Projects
-
-| Project | What it demonstrates |
-|:--|:--|
-| [**AWS EC2 Monitoring — Prometheus & Grafana**](https://github.com/Sameedkhan469/Grafana-Prometheus) | Terraform-managed AWS network and two Ubuntu EC2 instances; Prometheus, Node Exporter and Grafana dashboards for CPU, memory, disk and availability. The README notes that the services are installed directly on Ubuntu, not Docker. |
-| [**Multi-Tier E-Commerce on AWS**](https://github.com/Sameedkhan469/sameed-ecommerce-aws-terraform) | Terraform-defined Nginx frontend, private Flask backend and private RDS MySQL database, tier-specific Security Groups, NAT routing and Systems Manager access. |
-| [**AWS Three-Tier Infrastructure**](https://github.com/Sameedkhan469/Terraform-Three-Tier-Project) | Terraform configuration for a VPC, eight tier-specific subnets across two Availability Zones, HTTP Application Load Balancer, Nginx frontend EC2 instances, backend instances and private RDS MySQL. This is an infrastructure learning project; the repository documents that the complete frontend-to-backend application workflow is not yet implemented. |
-| [**Jenkins CI/CD + Terraform**](https://github.com/Sameedkhan469/jenkins-cicd-practice) | Jenkins pipeline for Terraform checkout, init, format, validate and plan steps, plus Terraform configuration for AWS infrastructure hosting Jenkins. |
-| [**Maven Build Pipeline**](https://github.com/Sameedkhan469/sameed-maven-project) | Maven Java project with a Jenkinsfile for compile, test and package stages, with JAR artifact archiving and success/failure handling. |
-| [**Terraform Practice Labs**](https://github.com/Sameedkhan469/terraform-practice) | Daily hands-on labs including state/backend concepts, EC2, modules, provisioners, `null_resource`, dynamic Security Group rules, `count` and `for_each`. |
-| [**Linux Commands for DevOps & Cloud**](https://github.com/Sameedkhan469/Linux-commands) | A reference for Linux file and user management, permissions, processes, packages, networking, storage, monitoring, services, shell scripting, logs and common DevOps commands. |
-
-## Professional Experience
-
-- **Networking Engineer — F2TH Communication Private Ltd** · Bengaluru, India · 8 months  
-  Troubleshooting connectivity, routing, IP addressing, DNS/DHCP and TCP/IP; configuring and troubleshooting network devices; investigating infrastructure faults.
-- **System Administrator — DN Computers** · 1 year 6 months  
-  Windows/Linux administration, software installation and updates, user accounts and permissions, operating-system and hardware troubleshooting, file sharing, backups and basic security controls.
-
-## Education & Training
-
-- **Bachelor of Computer Applications (BCA)** — Arunodaya University · 2021–2024
-- **Diploma in Cloud Computing** — Jetking
-- **AWS Solutions Architecture Job Simulation** — Forage
-
-## Next Learning Goals
-
-I am strengthening my practical DevOps toolkit in the next stages:
-
-- Docker and Docker Compose
-- Kubernetes fundamentals and AWS EKS
-- Ansible for configuration management
-- End-to-end CI/CD deployment and release practices
-
-These are learning goals, not a claim that these tools are already demonstrated in the featured repositories.
-
-## GitHub Stats
-
+<a href="https://github.com/Sameedkhan469/sameed-ecommerce-aws-terraform"><img src="assets/project-ecommerce.svg" width="100%" alt="Multi-tier AWS e-commerce infrastructure with Nginx, Flask, RDS MySQL and Terraform."></a>
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Sameedkhan469&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github" alt="Sameed Khan's GitHub statistics" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sameedkhan469&layout=compact&hide_border=true&theme=tokyonight" alt="Most used languages" />
-  <br>
-  <img src="https://streak-stats.demolab.com?user=Sameedkhan469&theme=tokyonight&hide_border=true" alt="GitHub contribution streak" />
+  <a href="https://github.com/Sameedkhan469/sameed-ecommerce-aws-terraform"><img src="https://img.shields.io/badge/Repository-AWS_E--Commerce-451126?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="AWS E-commerce repository"></a>
 </p>
 
-## Contribution Snake
+<a href="https://github.com/Sameedkhan469/Terraform-Three-Tier-Project"><img src="assets/project-three-tier.svg" width="100%" alt="Terraform AWS three-tier infrastructure learning project with VPC, eight subnets, ALB, EC2 and private RDS MySQL."></a>
+<p align="center">
+  <a href="https://github.com/Sameedkhan469/Terraform-Three-Tier-Project"><img src="https://img.shields.io/badge/Repository-Three--Tier_AWS-451126?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="Three-tier AWS repository"></a>
+</p>
 
+<a href="https://github.com/Sameedkhan469/jenkins-cicd-practice"><img src="assets/project-jenkins.svg" width="100%" alt="Jenkins CI/CD practice projects with a Maven compile/test/package pipeline and Terraform formatting, validation and planning pipeline."></a>
+<p align="center">
+  <a href="https://github.com/Sameedkhan469/jenkins-cicd-practice"><img src="https://img.shields.io/badge/Repository-Jenkins_CI%2FCD-451126?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="Jenkins CI/CD repository"></a>
+  <a href="https://github.com/Sameedkhan469/sameed-maven-project"><img src="https://img.shields.io/badge/Repository-Maven_Build-451126?style=for-the-badge&labelColor=190B12&logo=apachemaven&logoColor=F8F0F3" alt="Maven build project"></a>
+</p>
+
+<a href="https://github.com/Sameedkhan469/terraform-practice"><img src="assets/project-terraform.svg" width="100%" alt="Terraform practice labs for state, backends, modules, data sources, dependencies, provisioners, null_resource, dynamic security group rules, count and for_each."></a>
+<p align="center">
+  <a href="https://github.com/Sameedkhan469/terraform-practice"><img src="https://img.shields.io/badge/Repository-Terraform_Labs-451126?style=for-the-badge&labelColor=190B12&logo=terraform&logoColor=F8F0F3" alt="Terraform practice repository"></a>
+</p>
+
+<a href="https://github.com/Sameedkhan469/Linux-commands"><img src="assets/project-linux.svg" width="100%" alt="Linux command reference for systems administration, networking, processes, storage, monitoring, shell basics and logs."></a>
+<p align="center">
+  <a href="https://github.com/Sameedkhan469/Linux-commands"><img src="https://img.shields.io/badge/Repository-Linux_Commands-451126?style=for-the-badge&labelColor=190B12&logo=linux&logoColor=F8F0F3" alt="Linux commands repository"></a>
+</p>
+
+<img src="assets/title-toolkit.svg" width="100%" alt="04 Toolkit — the systems and tools I work with.">
+<img src="assets/tech-constellation.svg" width="100%" alt="Skills overview: AWS and Terraform, Jenkins and Maven, Prometheus, Grafana and Splunk, Linux and Windows, Bash, Python, Boto3, Nginx, Flask, MySQL and networking.">
+
+<img src="assets/title-commits.svg" width="100%" alt="05 Contribution log — a little progress, committed.">
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution graph snake animation" src="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake animation generated from my GitHub contribution graph.">
   </picture>
 </p>
-
-> The contribution animation is generated by the GitHub Actions workflow in `.github/workflows/snake.yml`. It will appear after the workflow runs successfully and publishes the `output` branch.
-
-## Connect
-
 <p align="center">
-  <a href="https://www.linkedin.com/in/sameed-khan-a6824538a/">
-    <img src="https://img.shields.io/badge/LinkedIn-Sameed_Khan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/Sameedkhan469">
-    <img src="https://img.shields.io/badge/GitHub-Sameedkhan469-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+  <img src="https://github-readme-stats.vercel.app/api?username=Sameedkhan469&show_icons=true&hide_rank=true&hide_border=true&border_radius=16&bg_color=190B12&title_color=E5B5C7&text_color=B6A3AC&icon_color=C77B9B&custom_title=GitHub%20at%20a%20glance" width="49%" alt="GitHub statistics for Sameed Khan">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sameedkhan469&layout=compact&hide_border=true&border_radius=16&bg_color=190B12&title_color=E5B5C7&text_color=B6A3AC" width="40%" alt="Most used languages">
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Sameedkhan469&theme=dark&hide_border=true&background=190B12&ring=C77B9B&fire=E5B5C7&currStreakLabel=E5B5C7" width="70%" alt="GitHub contribution streak">
 </p>
 
-<p align="center"><b>Build • Automate • Deploy • Monitor</b></p>
+<img src="assets/title-training.svg" width="100%" alt="06 Education and training — learning that supports the practice.">
+<img src="assets/training.svg" width="100%" alt="Bachelor of Computer Applications at Arunodaya University from 2021 to 2024, Diploma in Cloud Computing from Jetking and AWS Solutions Architecture Job Simulation from Forage.">
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Current_focus-Docker_%26_Containerization-451126?style=for-the-badge&labelColor=190B12&logo=docker&logoColor=F8F0F3" alt="Docker is a learning goal">
+  <img src="https://img.shields.io/badge/Next-Kubernetes_%26_EKS-451126?style=for-the-badge&labelColor=190B12&logo=kubernetes&logoColor=F8F0F3" alt="Kubernetes and EKS are learning goals">
+  <img src="https://img.shields.io/badge/Next-Ansible-451126?style=for-the-badge&labelColor=190B12&logo=ansible&logoColor=F8F0F3" alt="Ansible is a learning goal">
+</p>
+
+<p align="center">
+  <em>These are next learning goals, not claims of completed production experience.</em>
+</p>
+
+<img src="assets/title-connect.svg" width="100%" alt="07 Connect — let's build reliable systems.">
+<p align="center">
+  <a href="mailto:sameedkhan0469@gmail.com"><img src="https://img.shields.io/badge/Email-sameedkhan0469%40gmail.com-701A3D?style=for-the-badge&labelColor=190B12&logo=gmail&logoColor=F8F0F3" alt="Email Sameed Khan"></a>
+  <a href="https://www.linkedin.com/in/sameed-khan-a6824538a/"><img src="https://img.shields.io/badge/LinkedIn-Sameed_Khan-701A3D?style=for-the-badge&labelColor=190B12&logo=linkedin&logoColor=F8F0F3" alt="LinkedIn Sameed Khan"></a>
+  <a href="https://github.com/Sameedkhan469"><img src="https://img.shields.io/badge/GitHub-Sameedkhan469-701A3D?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="GitHub Sameed Khan"></a>
+</p>
+<a href="https://github.com/Sameedkhan469">
+  <img src="assets/footer-signature.svg" width="100%" alt="Sameed Khan — Build with intent, automate the repeatable, observe the result, improve the system.">
+</a>
+
+<p align="center"><sub>Profile details and project descriptions are based on my CV and linked repositories. Project descriptions distinguish infrastructure labs from complete production applications.</sub></p>
