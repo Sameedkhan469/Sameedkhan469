@@ -53,19 +53,11 @@
 <img src="assets/tech-constellation.svg" width="100%" alt="Skills overview: AWS and Terraform, Jenkins and Maven, Prometheus, Grafana and Splunk, Linux and Windows, Bash, Python, Boto3, Nginx, Flask, MySQL and networking.">
 
 <img src="assets/title-commits.svg" width="100%" alt="05 Contribution log — a little progress, committed.">
+<a href="https://github.com/Sameedkhan469">
+  <img src="assets/contribution-heatmap.svg" width="100%" alt="Real GitHub contribution heatmap for Sameed Khan, with a moving snake and statistics generated from the public contribution calendar.">
+</a>
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake.svg">
-    <img src="https://raw.githubusercontent.com/Sameedkhan469/Sameedkhan469/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake animation generated from my GitHub contribution graph.">
-  </picture>
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sameedkhan469&show_icons=true&hide_rank=true&hide_border=true&border_radius=16&bg_color=190B12&title_color=E5B5C7&text_color=B6A3AC&icon_color=C77B9B&custom_title=GitHub%20at%20a%20glance" width="49%" alt="GitHub statistics for Sameed Khan">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sameedkhan469&layout=compact&hide_border=true&border_radius=16&bg_color=190B12&title_color=E5B5C7&text_color=B6A3AC" width="40%" alt="Most used languages">
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Sameedkhan469&theme=dark&hide_border=true&background=190B12&ring=C77B9B&fire=E5B5C7&currStreakLabel=E5B5C7" width="70%" alt="GitHub contribution streak">
+  <img src="assets/github-stats.svg" width="100%" alt="Locally generated GitHub repository and contribution statistics for Sameed Khan.">
 </p>
 
 <img src="assets/title-training.svg" width="100%" alt="06 Education and training — learning that supports the practice.">
