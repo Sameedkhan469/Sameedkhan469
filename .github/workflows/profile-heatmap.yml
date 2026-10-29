@@ -38,11 +38,8 @@ jobs:
           GH_USERNAME: Sameedkhan469
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/fetch-contributions.mjs
-      - name: Fetch the current GitHub avatar for the profile header
-        run: |
-          curl --fail --location --retry 3 --retry-delay 1 \
-            "https://avatars.githubusercontent.com/u/290256359?v=4&s=1024" \
-            --output assets/sameed-avatar.png
+      - name: Use the custom cartoon portrait for the profile header
+        run: cp assets/sameed-cartoon.jpg assets/sameed-avatar.png
       - name: Render heatmap, snake and statistics cards
         env:
           GH_USERNAME: Sameedkhan469
