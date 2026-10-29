@@ -164,7 +164,7 @@ const stats = [
   ["LONGEST STREAK", countFormat(longestStreak), "consecutive days"],
   ["BUSIEST DAY", countFormat(peak.count), formatDate(toDate(peak.date))]
 ];
-const statsSvg = stats.map((item, index) => {
+const heatmapStatsSvg = stats.map((item, index) => {
   const x = 555 + index * 150;
   return "<g transform=\"translate(" + x + " 56)\"><text class=\"hm-mono\" font-size=\"9.5\" letter-spacing=\"1.4\" fill=\"#C77B9B\">" + item[0] + "</text><text class=\"hm-serif\" y=\"42\" font-size=\"33\" fill=\"#F8F0F3\">" + escapeXml(item[1]) + "</text><text class=\"hm-mono\" y=\"61\" font-size=\"9\" fill=\"#B6A3AC\">" + escapeXml(item[2]) + "</text></g>";
 }).join("");
@@ -196,7 +196,7 @@ const heatmapSvg = [
 "<defs><linearGradient id=\"hm-bg\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop stop-color=\"#190B12\"/><stop offset=\"1\" stop-color=\"#10070C\"/></linearGradient><radialGradient id=\"hm-light\" cx=\"88%\" cy=\"0%\" r=\"70%\"><stop stop-color=\"#701A3D\" stop-opacity=\".55\"/><stop offset=\"1\" stop-color=\"#451126\" stop-opacity=\"0\"/></radialGradient><filter id=\"hm-glow\" x=\"-60%\" y=\"-60%\" width=\"220%\" height=\"220%\"><feGaussianBlur stdDeviation=\"2.2\" result=\"blur\"/><feMerge><feMergeNode in=\"blur\"/><feMergeNode in=\"SourceGraphic\"/></feMerge></filter></defs>",
 "<style>.hm-serif{font-family:Georgia,\"Iowan Old Style\",\"Palatino Linotype\",\"Times New Roman\",serif}.hm-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,\"Liberation Mono\",monospace}.hm-cell{transform-box:fill-box;transform-origin:center;animation:hm-pop .72s cubic-bezier(.34,1.56,.64,1) both}.hm-fade{animation:hm-fade 1.1s ease both}@keyframes hm-pop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}@keyframes hm-fade{from{opacity:0}to{opacity:1}}@media(prefers-reduced-motion:reduce){.hm-cell,.hm-fade{animation:none}.hm-motion{display:none}}</style>",
 "<rect width=\"" + W + "\" height=\"" + H + "\" rx=\"20\" fill=\"url(#hm-bg)\"/><rect width=\"" + W + "\" height=\"" + H + "\" rx=\"20\" fill=\"url(#hm-light)\"/><rect x=\".5\" y=\".5\" width=\"" + (W - 1) + "\" height=\"" + (H - 1) + "\" rx=\"19.5\" fill=\"none\" stroke=\"#C77B9B\" stroke-opacity=\".2\"/>",
-"<g class=\"hm-fade\"><text class=\"hm-mono\" x=\"54\" y=\"40\" font-size=\"10.5\" letter-spacing=\"2.2\" fill=\"#C77B9B\">COMMIT LOG · REAL GITHUB ACTIVITY</text><text class=\"hm-serif\" x=\"52\" y=\"80\" font-size=\"26\" fill=\"#F8F0F3\">A year of building, <tspan font-style=\"italic\" fill=\"#E5B5C7\">one square</tspan> at a time.</text>" + statsSvg + "</g>",
+"<g class=\"hm-fade\"><text class=\"hm-mono\" x=\"54\" y=\"40\" font-size=\"10.5\" letter-spacing=\"2.2\" fill=\"#C77B9B\">COMMIT LOG · REAL GITHUB ACTIVITY</text><text class=\"hm-serif\" x=\"52\" y=\"80\" font-size=\"26\" fill=\"#F8F0F3\">A year of building, <tspan font-style=\"italic\" fill=\"#E5B5C7\">one square</tspan> at a time.</text>" + heatmapStatsSvg + "</g>",
 "<g class=\"hm-mono\" font-size=\"10\" fill=\"#B6A3AC\">" + monthSvg + "</g>",
 "<g class=\"hm-mono\" font-size=\"9.5\" fill=\"#B6A3AC\" text-anchor=\"end\"><text x=\"" + (GRID_X - 12) + "\" y=\"" + (GRID_Y + STEP + 8) + "\">Mon</text><text x=\"" + (GRID_X - 12) + "\" y=\"" + (GRID_Y + 3 * STEP + 8) + "\">Wed</text><text x=\"" + (GRID_X - 12) + "\" y=\"" + (GRID_Y + 5 * STEP + 8) + "\">Fri</text></g>",
 "<g>" + cells.join("\n") + "</g><g class=\"hm-motion\" filter=\"url(#hm-glow)\">" + snake.join("\n") + "</g>",
@@ -247,4 +247,4 @@ const statsSvg = [
 "<path d=\"M42 81H1158\" stroke=\"#451126\"/>" + cards,
 "<text class=\"sm-mono\" x=\"42\" y=\"192\" font-size=\"9.5\" fill=\"#8F737E\">Public GitHub API · contribution calendar snapshot " + escapeXml(fetched) + " · values refresh automatically through GitHub Actions.</text></svg>"
 ].join("\n");
-writeOutputs(STATS_OUTPUTS, statsSvg);
+writeOutputs(STATS_OUTPUTS, profileStatsSvg);
