@@ -209,3 +209,60 @@ body.cursor-hover .custom-cursor{width:48px;height:48px;background:rgba(199,123,
   .hero-art .portrait-frame,.hero-art-caption{animation:none!important}
   .project-visual:after{display:none!important}
 }
+
+
+/* Portrait sizing and caption alignment */
+.hero-art{
+  display:flex!important;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:17px;
+  min-height:510px;
+  padding:34px 0 22px;
+}
+.portrait-frame{
+  width:min(350px,88%)!important;
+  height:auto!important;
+  aspect-ratio:270 / 305;
+  padding:8px!important;
+  flex:0 0 auto;
+  transform:none!important;
+}
+.portrait-frame .profile-photo{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 42%;
+  border-radius:inherit;
+}
+.hero-art-caption{
+  position:relative!important;
+  inset:auto!important;
+  width:100%;
+  text-align:center;
+  display:block!important;
+  margin:0;
+  padding:0 8px;
+  font-size:10px!important;
+  line-height:1.5;
+  letter-spacing:2.2px!important;
+  white-space:normal;
+  z-index:3;
+  transform:none;
+}
+.portrait-orbit{top:43%!important;left:50%!important}
+@media(max-width:900px){
+  .hero-art{min-height:0;padding:36px 0 28px;gap:15px}
+  .portrait-frame{width:min(340px,86%)!important}
+  .hero-art-caption{font-size:10px!important}
+}
+@media(max-width:660px){
+  .hero-art{padding:32px 0 25px;gap:14px}
+  .portrait-frame{width:min(330px,88%)!important;padding:7px!important}
+  .hero-art-caption{font-size:9px!important;letter-spacing:1.8px!important}
+  .portrait-orbit-one{width:min(370px,100vw)!important;height:min(370px,100vw)!important}
+  .portrait-orbit-two{width:min(400px,108vw)!important;height:min(300px,80vw)!important}
+}
+@media(prefers-reduced-motion:reduce){.hero-art{animation:none!important}.hero-art-caption{animation:none!important}}
