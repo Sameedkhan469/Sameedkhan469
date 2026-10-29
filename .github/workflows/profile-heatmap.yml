@@ -35,7 +35,7 @@ jobs:
       - name: Fetch public GitHub contributions
         env:
           GH_USERNAME: Sameedkhan469
-          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/fetch-contributions.mjs
       - name: Render heatmap, snake and statistics cards
         env:
