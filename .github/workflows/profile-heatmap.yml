@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/profile-heatmap.yml"
+      - "assets/sameed-cartoon.jpg"
       - "scripts/fetch-contributions.mjs"
       - "scripts/build-profile-visuals.mjs"
       - "scripts/build-jet-heatmap.mjs"
