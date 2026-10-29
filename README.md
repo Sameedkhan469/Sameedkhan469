@@ -1,5 +1,9 @@
 <a href="https://github.com/Sameedkhan469">
-  <img src="assets/sameed-hero.svg" width="100%" alt="Sameed Khan — AWS DevOps, systems administration and networking. Build infrastructure, automate delivery and monitor systems.">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="assets/sameed-hero-light.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/sameed-hero-dark.svg">
+    <img src="assets/sameed-hero.svg" width="100%" alt="Sameed Khan — AWS DevOps, systems administration and networking. Build infrastructure, automate delivery and monitor systems.">
+  </picture>
 </a>
 
 <p align="center">
