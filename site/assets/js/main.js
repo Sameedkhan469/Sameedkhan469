@@ -111,7 +111,7 @@
         if (p.y > height + 5) p.y = -5;
         context.beginPath();
         context.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        context.fillStyle = 'rgba(229,181,199,' + p.a + ')';
+        context.fillStyle = 'rgba(197,229,255,' + p.a + ')';
         context.fill();
         for (let n = index + 1; n < Math.min(index + 4, particles.length); n++) {
           const q = particles[n];
@@ -122,7 +122,7 @@
             context.beginPath();
             context.moveTo(p.x, p.y);
             context.lineTo(q.x, q.y);
-            context.strokeStyle = 'rgba(199,123,155,' + ((1 - distance / 95) * .09) + ')';
+            context.strokeStyle = 'rgba(138,191,255,' + ((1 - distance / 95) * .09) + ')';
             context.lineWidth = .6;
             context.stroke();
           }
