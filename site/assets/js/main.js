@@ -41,45 +41,37 @@
     revealItems.forEach(item => revealObserver.observe(item));
   }
 
-  // Cursor ring and spotlight use transforms/CSS variables rather than layout reads.
-  const cursor = document.querySelector('.custom-cursor');
-  let pointerX = window.innerWidth / 2;
-  let pointerY = window.innerHeight / 3;
-  let cursorX = pointerX;
-  let cursorY = pointerY;
-  let rafPending = false;
-  if (finePointer && cursor && !reduceMotion) {
-    document.body.classList.add('cursor-ready');
-    const updatePointer = event => {
-      pointerX = event.clientX;
-      pointerY = event.clientY;
-      document.documentElement.style.setProperty('--pointer-x', pointerX + 'px');
-      document.documentElement.style.setProperty('--pointer-y', pointerY + 'px');
-      if (!rafPending) {
-        rafPending = true;
-        requestAnimationFrame(() => {
-          cursorX += (pointerX - cursorX) * 0.28;
-          cursorY += (pointerY - cursorY) * 0.28;
-          cursor.style.transform = 'translate3d(' + (cursorX - 17) + 'px,' + (cursorY - 17) + 'px,0)';
-          rafPending = false;
-          if (Math.abs(pointerX - cursorX) > 0.5 || Math.abs(pointerY - cursorY) > 0.5) {
-            requestAnimationFrame(function follow() {
-              cursorX += (pointerX - cursorX) * 0.28;
-              cursorY += (pointerY - cursorY) * 0.28;
-              cursor.style.transform = 'translate3d(' + (cursorX - 17) + 'px,' + (cursorY - 17) + 'px,0)';
-              if (Math.abs(pointerX - cursorX) > 0.5 || Math.abs(pointerY - cursorY) > 0.5) requestAnimationFrame(follow);
-            });
-          }
+  // Soft pointer-following spotlight only — no custom or circular cursor.
+  if (finePointer && !reduceMotion) {
+    let pointerFrame = 0;
+    let lastX = 0;
+    let lastY = 0;
+    window.addEventListener('pointermove', event => {
+      lastX = event.clientX;
+      lastY = event.clientY;
+      if (!pointerFrame) {
+        pointerFrame = requestAnimationFrame(() => {
+          document.documentElement.style.setProperty('--pointer-x', lastX + 'px');
+          document.documentElement.style.setProperty('--pointer-y', lastY + 'px');
+          pointerFrame = 0;
         });
       }
-    };
-    window.addEventListener('pointermove', updatePointer, { passive: true });
-    document.querySelectorAll('a,button,.project-card').forEach(element => {
-      element.addEventListener('pointerenter', () => document.body.classList.add('cursor-hover'));
-      element.addEventListener('pointerleave', () => document.body.classList.remove('cursor-hover'));
+    }, { passive: true });
+
+    // Gentle 3D depth on project cards, limited to precise-pointer devices.
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('pointermove', event => {
+        const rect = card.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+        card.style.setProperty('--tilt-x', (y * -1.5).toFixed(2) + 'deg');
+        card.style.setProperty('--tilt-y', (x * 1.8).toFixed(2) + 'deg');
+      }, { passive: true });
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--tilt-x', '0deg');
+        card.style.setProperty('--tilt-y', '0deg');
+      });
     });
-    document.addEventListener('pointerdown', () => document.body.classList.add('cursor-hover'));
-    document.addEventListener('pointerup', () => document.body.classList.remove('cursor-hover'));
   }
 
   // Lightweight ambient particles on canvas; no library, no continuous work when hidden.
