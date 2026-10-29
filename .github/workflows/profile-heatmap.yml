@@ -1,0 +1,55 @@
+name: Refresh profile contribution heatmap
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-heatmap.yml"
+      - "scripts/fetch-contributions.mjs"
+      - "scripts/build-profile-visuals.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sameed-profile-heatmap
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check script syntax
+        run: |
+          node --check scripts/fetch-contributions.mjs
+          node --check scripts/build-profile-visuals.mjs
+      - name: Fetch public GitHub contributions
+        env:
+          GH_USERNAME: Sameedkhan469
+          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-contributions.mjs
+      - name: Render heatmap, snake and statistics cards
+        env:
+          GH_USERNAME: Sameedkhan469
+          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build-profile-visuals.mjs
+      - name: Commit changed snapshot and generated visuals
+        run: |
+          git add site/data/contributions.json assets/contribution-heatmap.svg assets/github-stats.svg site/assets/img/contribution-heatmap.svg site/assets/img/github-stats.svg
+          if git diff --cached --quiet; then
+            echo "No contribution or stats changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh profile contribution visuals"
+          git push
