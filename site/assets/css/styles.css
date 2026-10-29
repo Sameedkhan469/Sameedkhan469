@@ -266,3 +266,15 @@ body.cursor-hover .custom-cursor{width:48px;height:48px;background:rgba(138,191,
   .portrait-orbit-two{width:min(400px,108vw)!important;height:min(300px,80vw)!important}
 }
 @media(prefers-reduced-motion:reduce){.hero-art{animation:none!important}.hero-art-caption{animation:none!important}}
+
+/* Blue–violet–cyan glass theme inspired by the supplied reference */
+:root{--bg:#0b1026;--surface:rgba(25,35,74,.72);--surface2:rgba(45,49,104,.58);--surface3:rgba(72,76,145,.42);--ink:#f4f8ff;--muted:#c4d2e8;--subtle:#91a4c6;--rose:#60a5fa;--pink:#7dd3fc;--line:rgba(145,164,230,.22);--line2:rgba(125,211,252,.48)}
+body{background-color:#0b1026;background-image:radial-gradient(ellipse at 50% 8%,rgba(91,76,202,.48),transparent 36rem),radial-gradient(ellipse at 7% 35%,rgba(34,190,225,.28),transparent 28rem),radial-gradient(ellipse at 92% 75%,rgba(14,165,233,.32),transparent 32rem),linear-gradient(135deg,#090e1f 0%,#20204f 52%,#0d526a 100%);background-attachment:fixed}
+.site-header{background:rgba(11,16,38,.78);border-bottom-color:rgba(125,211,252,.18)}
+.terminal-window,.fact-card,.project-card,.education-panel,.toolkit-card{background:linear-gradient(135deg,rgba(94,91,160,.28),rgba(25,35,74,.64));backdrop-filter:blur(16px)}
+.panel{background:linear-gradient(135deg,rgba(111,111,190,.32),rgba(20,36,76,.62));backdrop-filter:blur(16px)}
+.section-alt{background:linear-gradient(180deg,rgba(45,49,104,.22),rgba(11,16,38,.28));border-color:rgba(125,211,252,.13)}
+.button-primary{background:linear-gradient(110deg,#7dd3fc,#93c5fd);color:#0b1026}
+.button-primary:hover{background:linear-gradient(110deg,#bae6fd,#bfdbfe)}
+.hero-skills span,.tag-list span,.tool-pills span{background:rgba(93,111,190,.2);border-color:rgba(125,211,252,.24)}
+::selection{background:rgba(125,211,252,.38);color:#fff}
