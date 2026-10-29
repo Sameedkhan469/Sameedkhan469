@@ -4,7 +4,7 @@
 <defs>
   <linearGradient id="hero-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF9FB"/><stop offset=".55" stop-color="#F6EDF1"/><stop offset="1" stop-color="#FFFAFC"/></linearGradient>
   <radialGradient id="hero-glow" cx="78%" cy="28%" r="75%"><stop stop-color="#8B204A" stop-opacity=".68"/><stop offset="1" stop-color="#FFFAFC" stop-opacity="0"/></radialGradient>
-  <linearGradient id="hero-metal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A5446B"/><stop offset=".55" stop-color="#190B12"/><stop offset="1" stop-color="#A5446B"/></linearGradient>
+  <linearGradient id="hero-metal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A5446B"/><stop offset=".55" stop-color="#10162B"/><stop offset="1" stop-color="#A5446B"/></linearGradient>
   <linearGradient id="hero-line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A5446B"/><stop offset="1" stop-color="#8B204A" stop-opacity="0"/></linearGradient>
   <pattern id="hero-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#8A234D" stroke-opacity=".055"/></pattern>
   <linearGradient id="hero-scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A234D" stop-opacity="0"/><stop offset=".5" stop-color="#8A234D" stop-opacity=".10"/><stop offset="1" stop-color="#8A234D" stop-opacity="0"/></linearGradient>
@@ -32,16 +32,16 @@
     <circle cx="720" cy="240" r="1"><animate attributeName="opacity" values="0;.7;0" dur="4.4s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="cy" values="240;216" dur="4.4s" begin="2.5s" repeatCount="indefinite"/></circle>
   </g>
 </g><rect x="1" y="1" width="1198" height="428" rx="21" fill="none" stroke="#A5446B" stroke-opacity=".38"/>
-<g class="a"><rect x="48" y="34" width="330" height="32" rx="16" fill="#FFFAFC" stroke="#C99FB0" stroke-opacity=".75"/><circle cx="67" cy="50" r="3.5" fill="#A5446B"/><text class="m" x="82" y="54" fill="#190B12" font-size="11">~/sameedkhan $ build --infrastructure</text><path d="M48 83H742" stroke="#EBD7E0"/></g>
+<g class="a"><rect x="48" y="34" width="330" height="32" rx="16" fill="#FFFAFC" stroke="#C99FB0" stroke-opacity=".75"/><circle cx="67" cy="50" r="3.5" fill="#A5446B"/><text class="m" x="82" y="54" fill="#10162B" font-size="11">~/sameedkhan $ build --infrastructure</text><path d="M48 83H742" stroke="#EBD7E0"/></g>
 <g class="b"><text class="m" x="50" y="111" fill="#A5446B" font-size="11" letter-spacing="3.1">CLOUD · ENGINEERING · AUTOMATION</text>
-<text class="serif" x="48" y="178" fill="#190B12" font-size="61">Sameed Khan</text>
+<text class="serif" x="48" y="178" fill="#10162B" font-size="61">Sameed Khan</text>
 <text class="serif" x="49" y="232" fill="url(#hero-metal)" font-size="51" font-style="italic">Cloud infrastructure.</text>
 <path d="M50 253H730" stroke="url(#hero-line)" stroke-width="1.4"/>
 <circle cx="50" cy="253" r="3" fill="#8A234D" opacity=".85">
   <animate attributeName="cx" values="50;730;50" keyTimes="0;.5;1" dur="10s" repeatCount="indefinite"/>
   <animate attributeName="opacity" values=".25;1;.25" dur="3s" repeatCount="indefinite"/>
 </circle>
-<text class="m" x="51" y="287" fill="#190B12" font-size="12" letter-spacing="1.1">AWS DEVOPS · SYSTEMS ADMINISTRATION · NETWORKING</text>
+<text class="m" x="51" y="287" fill="#10162B" font-size="12" letter-spacing="1.1">AWS DEVOPS · SYSTEMS ADMINISTRATION · NETWORKING</text>
 <text class="serif" x="50" y="318" fill="#67535E" font-size="20" font-style="italic">Build with intent. Automate the repeatable.</text>
 <text class="m" x="50" y="354" fill="#7D5C69" font-size="10.5" letter-spacing="1.1">TERRAFORM · JENKINS · PROMETHEUS · GRAFANA · SPLUNK</text></g>
 <g transform="translate(970 210)">
@@ -50,7 +50,7 @@
   <circle r="134" fill="none" stroke="#8A234D" stroke-opacity=".34" stroke-width="1.1" stroke-dasharray="48 795">
     <animate attributeName="stroke-dashoffset" values="0;-843" dur="18s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="0" cy="-133" r="3" fill="#190B12">
+  <circle cx="0" cy="-133" r="3" fill="#10162B">
     <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
     <animate attributeName="r" values="2.2;3.6;2.2" dur="3.8s" repeatCount="indefinite"/>
   </circle>
