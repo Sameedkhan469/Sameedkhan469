@@ -10,13 +10,14 @@ on:
       - ".github/workflows/profile-heatmap.yml"
       - "scripts/fetch-contributions.mjs"
       - "scripts/build-profile-visuals.mjs"
+      - "scripts/build-jet-heatmap.mjs"
 
 permissions:
   contents: write
 
 concurrency:
   group: sameed-profile-heatmap
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   refresh:
@@ -47,9 +48,11 @@ jobs:
           GH_USERNAME: Sameedkhan469
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/build-profile-visuals.mjs
+      - name: Render animated jet heatmap
+        run: node scripts/build-jet-heatmap.mjs
       - name: Commit changed snapshot and generated visuals
         run: |
-          git add site/data/contributions.json assets/contribution-heatmap.svg assets/github-stats.svg assets/sameed-hero.svg assets/project-monitoring.svg site/assets/img/contribution-heatmap.svg site/assets/img/github-stats.svg
+          git add site/data/contributions.json assets/contribution-heatmap.svg assets/github-stats.svg assets/github-jet.svg assets/sameed-hero.svg assets/project-monitoring.svg site/assets/img/contribution-heatmap.svg site/assets/img/github-stats.svg site/assets/img/github-jet.svg
           if git diff --cached --quiet; then
             echo "No contribution or stats changes to commit."
             exit 0
