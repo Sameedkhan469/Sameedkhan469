@@ -1,2 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="05 Contribution log">
-<defs><linearGradient id="l" x1="0" x2="1"><stop stop-color="#C77B9B"/><stop offset=".65" stop-color="#701A3D"/><stop offset="1" stop-color="#701A3D" stop-opacity="0"/></linearGradient></defs><style>.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Georgia,'Times New Roman',serif}</style><text class="m" x="40" y="32" font-size="12" letter-spacing="3" fill="#C77B9B">05 / CONTRIBUTION LOG</text><text class="s" x="38" y="82" font-size="44" fill="#F8F0F3">A little progress, committed.</text><text class="m" x="1160" y="32" text-anchor="end" font-size="11" letter-spacing="2" fill="#B6A3AC">LABS · FIXES · DOCUMENTATION</text><path d="M40 105H1160" stroke="url(#l)"/></svg>
+<defs><linearGradient id="l" x1="0" x2="1"><stop stop-color="#C77B9B"/><stop offset=".65" stop-color="#701A3D"/><stop offset="1" stop-color="#701A3D" stop-opacity="0"/></linearGradient></defs><style>.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Georgia,'Times New Roman',serif}</style><text class="m" x="40" y="32" font-size="12" letter-spacing="3" fill="#C77B9B">05 / CONTRIBUTION LOG</text><text class="s" x="38" y="82" font-size="44" fill="#F8F0F3">A little progress, committed.</text><text class="m" x="1160" y="32" text-anchor="end" font-size="11" letter-spacing="2" fill="#B6A3AC">LABS · FIXES · DOCUMENTATION</text><path d="M40 105H1160" stroke="url(#l)"/><style>.fx-header-motion{pointer-events:none}@media(prefers-reduced-motion:reduce){.fx-header-motion{display:none}}</style>
+<g class="fx-header-motion" pointer-events="none">
+  <circle cy="105" r="3.4" fill="#F8F0F3" opacity=".9">
+    <animate attributeName="cx" values="40;1160;40" keyTimes="0;.5;1" dur="11s" begin=".4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".35;1;.35" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cy="105" r="8" fill="#C77B9B" opacity=".2">
+    <animate attributeName="cx" values="40;1160;40" keyTimes="0;.5;1" dur="11s" begin=".4s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="4;9;4" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+</g></svg>
