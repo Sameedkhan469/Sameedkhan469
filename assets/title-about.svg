@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="01 About — Sameed Khan">
-<defs><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#C77B9B"/><stop offset=".62" stop-color="#701A3D"/><stop offset="1" stop-color="#701A3D" stop-opacity="0"/></linearGradient><linearGradient id="sheen"><stop stop-color="#E5B5C7"/><stop offset=".5" stop-color="#F8F0F3"/><stop offset="1" stop-color="#C77B9B"/></linearGradient></defs>
+<defs><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#60A5FA"/><stop offset=".62" stop-color="#4F46E5"/><stop offset="1" stop-color="#4F46E5" stop-opacity="0"/></linearGradient><linearGradient id="sheen"><stop stop-color="#7DD3FC"/><stop offset=".5" stop-color="#F4F8FF"/><stop offset="1" stop-color="#60A5FA"/></linearGradient></defs>
 <style>.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Georgia,'Times New Roman',serif}@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}.a{animation:enter .9s ease both}.b{animation:enter .9s .2s ease both}@media(prefers-reduced-motion:reduce){.a,.b{animation:none}}</style>
-<text class="m a" x="40" y="32" font-size="12" letter-spacing="3" fill="#C77B9B">01 / ABOUT</text>
-<text class="s b" x="38" y="82" font-size="44" fill="#F8F0F3">Hello, I’m <tspan font-style="italic" fill="url(#sheen)">Sameed.</tspan></text>
-<text class="m a" x="1160" y="32" text-anchor="end" font-size="11" letter-spacing="2.5" fill="#B6A3AC">INFRASTRUCTURE · AUTOMATION · OBSERVABILITY</text>
-<path d="M40 105H1160" stroke="url(#line)" stroke-width="1.2"/><circle r="5" cy="105" fill="#E5B5C7"><animate attributeName="cx" values="40;1160;40" dur="11s" repeatCount="indefinite"/></circle>
+<text class="m a" x="40" y="32" font-size="12" letter-spacing="3" fill="#60A5FA">01 / ABOUT</text>
+<text class="s b" x="38" y="82" font-size="44" fill="#F4F8FF">Hello, I’m <tspan font-style="italic" fill="url(#sheen)">Sameed.</tspan></text>
+<text class="m a" x="1160" y="32" text-anchor="end" font-size="11" letter-spacing="2.5" fill="#C4D2E8">INFRASTRUCTURE · AUTOMATION · OBSERVABILITY</text>
+<path d="M40 105H1160" stroke="url(#line)" stroke-width="1.2"/><circle r="5" cy="105" fill="#7DD3FC"><animate attributeName="cx" values="40;1160;40" dur="11s" repeatCount="indefinite"/></circle>
 </svg>
