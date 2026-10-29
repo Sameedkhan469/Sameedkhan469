@@ -7,9 +7,18 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "README.md"
+      - "dark.svg"
+      - "light.svg"
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: true
 
 jobs:
   build:
