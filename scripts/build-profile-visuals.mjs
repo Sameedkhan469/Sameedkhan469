@@ -237,7 +237,7 @@ const cards = statsValues.map((item, index) => {
   const x = 42 + index * 232;
   return "<g transform=\"translate(" + x + " 91)\"><text class=\"sm-mono\" font-size=\"10\" letter-spacing=\"1.4\" fill=\"#C77B9B\">" + item[0] + "</text><text class=\"sm-serif\" x=\"0\" y=\"47\" font-size=\"36\" fill=\"#F8F0F3\">" + escapeXml(item[1]) + "</text><text class=\"sm-mono\" x=\"0\" y=\"70\" font-size=\"10\" fill=\"#B6A3AC\">" + escapeXml(item[2]) + "</text></g>";
 }).join("");
-const statsSvg = [
+const profileStatsSvg = [
 "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 210\" width=\"1200\" height=\"210\" role=\"img\" aria-labelledby=\"stats-title stats-desc\">",
 "<title id=\"stats-title\">GitHub at a glance for @" + escapeXml(LOGIN) + "</title><desc id=\"stats-desc\">Public repository count, stars, forks and contribution calendar metrics. Statistics refreshed " + escapeXml(fetched) + ".</desc>",
 "<defs><linearGradient id=\"sm-bg\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\"><stop stop-color=\"#190B12\"/><stop offset=\"1\" stop-color=\"#10070C\"/></linearGradient><radialGradient id=\"sm-light\"><stop stop-color=\"#701A3D\" stop-opacity=\".35\"/><stop offset=\"1\" stop-color=\"#10070C\" stop-opacity=\"0\"/></radialGradient></defs>",
