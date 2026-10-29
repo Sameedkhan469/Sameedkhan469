@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="AWS EC2 monitoring project using Terraform, Prometheus, Node Exporter and Grafana">
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient><linearGradient id="pink" x1="0" x2="1"><stop stop-color="#C77B9B"/><stop offset="1" stop-color="#E5B5C7"/></linearGradient>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10162B"/><stop offset="1" stop-color="#090E1F"/></linearGradient><linearGradient id="pink" x1="0" x2="1"><stop stop-color="#60A5FA"/><stop offset="1" stop-color="#7DD3FC"/></linearGradient>
   <linearGradient id="fx-sheen" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#E5B5C7" stop-opacity="0"/>
-    <stop offset=".48" stop-color="#E5B5C7" stop-opacity=".20"/>
-    <stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
+    <stop offset="0" stop-color="#7DD3FC" stop-opacity="0"/>
+    <stop offset=".48" stop-color="#7DD3FC" stop-opacity=".20"/>
+    <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
   </linearGradient>
   <clipPath id="fx-panel-clip"><rect x="0" y="0" width="1200" height="320" rx="20"/></clipPath>
   <filter id="fx-panel-glow" x="-100%" y="-100%" width="300%" height="300%">
@@ -11,12 +11,12 @@
     <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
 </defs><style>.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}@keyframes metric-in{from{opacity:.2}to{opacity:1}}.ani{animation:metric-in .8s ease both}@media(prefers-reduced-motion:reduce){.ani{animation:none}}</style>
-<rect width="1200" height="320" rx="20" fill="url(#bg)" stroke="#C77B9B" stroke-opacity=".32"/><text class="m" x="34" y="35" fill="#C77B9B" font-size="11" letter-spacing="2">PROJECT 01 / OBSERVABILITY</text><text class="serif" x="34" y="78" fill="#F8F0F3" font-size="32">AWS EC2 Monitoring</text><text class="s" x="34" y="107" fill="#B6A3AC" font-size="15">Terraform provisions the lab; Prometheus scrapes Node Exporter;</text><text class="s" x="34" y="129" fill="#B6A3AC" font-size="15">Grafana visualizes CPU, memory, disk and target availability.</text>
-<g transform="translate(34 163)"><rect width="270" height="106" rx="12" fill="#10070C" stroke="#451126"/><text class="m" x="18" y="25" fill="#C77B9B" font-size="11">MONITORING EC2</text><path d="M22 67h38l14-22 20 33 16-15h30" stroke="#C77B9B" stroke-width="3" fill="none"/><text class="s" x="18" y="92" fill="#B6A3AC" font-size="12">Prometheus + Grafana</text></g>
-<path d="M314 217H350" stroke="#C77B9B" stroke-width="2"/><path d="M342 210l8 7-8 7" fill="none" stroke="#C77B9B" stroke-width="2"/>
-<g transform="translate(360 163)"><rect width="250" height="106" rx="12" fill="#10070C" stroke="#451126"/><text class="m" x="18" y="25" fill="#C77B9B" font-size="11">TARGET EC2</text><path d="M18 43h214v34H18z" fill="#190B12" stroke="#701A3D"/><circle cx="34" cy="60" r="4" fill="#E5B5C7"/><path d="M49 60h56m10 0h96" stroke="#8F737E" stroke-width="2"/><text class="s" x="18" y="96" fill="#B6A3AC" font-size="12">Node Exporter · port 9100</text></g>
-<g class="ani" transform="translate(650 163)"><rect width="150" height="106" rx="12" fill="#451126" stroke="#C77B9B"/><text class="m" x="16" y="25" fill="#E5B5C7" font-size="11">METRICS</text><text class="serif" x="16" y="53" fill="#F8F0F3" font-size="21">CPU</text><path d="M16 74h22l8-13 10 21 9-15h18l8-10 9 17h26" stroke="#E5B5C7" fill="none" stroke-width="2"/><text class="m" x="16" y="95" fill="#B6A3AC" font-size="9">MEMORY · DISK · UP</text></g>
-<text class="m" x="850" y="181" fill="#C77B9B" font-size="12" letter-spacing="1">STACK</text><text class="s" x="850" y="209" fill="#F8F0F3" font-size="16">AWS · VPC · EC2</text><text class="s" x="850" y="235" fill="#F8F0F3" font-size="16">Terraform · Ubuntu</text><text class="s" x="850" y="261" fill="#F8F0F3" font-size="16">Prometheus · Grafana</text><path d="M34 286H1166" stroke="#451126"/><text class="m" x="34" y="306" fill="#8F737E" font-size="11">SERVICES INSTALLED DIRECTLY ON UBUNTU · DOCKER IS NOT USED IN THIS PROJECT</text>
+<rect width="1200" height="320" rx="20" fill="url(#bg)" stroke="#60A5FA" stroke-opacity=".32"/><text class="m" x="34" y="35" fill="#60A5FA" font-size="11" letter-spacing="2">PROJECT 01 / OBSERVABILITY</text><text class="serif" x="34" y="78" fill="#F4F8FF" font-size="32">AWS EC2 Monitoring</text><text class="s" x="34" y="107" fill="#C4D2E8" font-size="15">Terraform provisions the lab; Prometheus scrapes Node Exporter;</text><text class="s" x="34" y="129" fill="#C4D2E8" font-size="15">Grafana visualizes CPU, memory, disk and target availability.</text>
+<g transform="translate(34 163)"><rect width="270" height="106" rx="12" fill="#090E1F" stroke="#1E3A8A"/><text class="m" x="18" y="25" fill="#60A5FA" font-size="11">MONITORING EC2</text><path d="M22 67h38l14-22 20 33 16-15h30" stroke="#60A5FA" stroke-width="3" fill="none"/><text class="s" x="18" y="92" fill="#C4D2E8" font-size="12">Prometheus + Grafana</text></g>
+<path d="M314 217H350" stroke="#60A5FA" stroke-width="2"/><path d="M342 210l8 7-8 7" fill="none" stroke="#60A5FA" stroke-width="2"/>
+<g transform="translate(360 163)"><rect width="250" height="106" rx="12" fill="#090E1F" stroke="#1E3A8A"/><text class="m" x="18" y="25" fill="#60A5FA" font-size="11">TARGET EC2</text><path d="M18 43h214v34H18z" fill="#10162B" stroke="#4F46E5"/><circle cx="34" cy="60" r="4" fill="#7DD3FC"/><path d="M49 60h56m10 0h96" stroke="#91A4C6" stroke-width="2"/><text class="s" x="18" y="96" fill="#C4D2E8" font-size="12">Node Exporter · port 9100</text></g>
+<g class="ani" transform="translate(650 163)"><rect width="150" height="106" rx="12" fill="#1E3A8A" stroke="#60A5FA"/><text class="m" x="16" y="25" fill="#7DD3FC" font-size="11">METRICS</text><text class="serif" x="16" y="53" fill="#F4F8FF" font-size="21">CPU</text><path d="M16 74h22l8-13 10 21 9-15h18l8-10 9 17h26" stroke="#7DD3FC" fill="none" stroke-width="2"/><text class="m" x="16" y="95" fill="#C4D2E8" font-size="9">MEMORY · DISK · UP</text></g>
+<text class="m" x="850" y="181" fill="#60A5FA" font-size="12" letter-spacing="1">STACK</text><text class="s" x="850" y="209" fill="#F4F8FF" font-size="16">AWS · VPC · EC2</text><text class="s" x="850" y="235" fill="#F4F8FF" font-size="16">Terraform · Ubuntu</text><text class="s" x="850" y="261" fill="#F4F8FF" font-size="16">Prometheus · Grafana</text><path d="M34 286H1166" stroke="#1E3A8A"/><text class="m" x="34" y="306" fill="#91A4C6" font-size="11">SERVICES INSTALLED DIRECTLY ON UBUNTU · DOCKER IS NOT USED IN THIS PROJECT</text>
   <style>
     .fx-motion { pointer-events:none; }
     @media (prefers-reduced-motion: reduce) { .fx-motion { display:none; } }
@@ -25,10 +25,10 @@
     <rect x="-280" y="0" width="280" height="320" fill="url(#fx-sheen)" opacity=".62">
       <animate attributeName="x" values="-280;1200;1200" keyTimes="0;.72;1" dur="9.5s" begin="1.1s" repeatCount="indefinite"/>
     </rect>
-    <rect x="1.5" y="1.5" width="1197" height="317" rx="19" fill="none" stroke="#C77B9B" stroke-opacity=".54" stroke-width="1.15" stroke-dasharray="58 3040">
+    <rect x="1.5" y="1.5" width="1197" height="317" rx="19" fill="none" stroke="#60A5FA" stroke-opacity=".54" stroke-width="1.15" stroke-dasharray="58 3040">
       <animate attributeName="stroke-dashoffset" values="0;-3040" dur="24s" repeatCount="indefinite"/>
     </rect>
-    <circle r="2.2" fill="#F8F0F3" filter="url(#fx-panel-glow)">
+    <circle r="2.2" fill="#F4F8FF" filter="url(#fx-panel-glow)">
       <animateMotion path="M 20 1 H 1180 Q 1199 1 1199 20 V 300 Q 1199 319 1180 319 H 20 Q 1 319 1 300 V 20 Q 1 1 20 1" dur="17s" begin=".8s" repeatCount="indefinite" rotate="auto"/>
       <animate attributeName="opacity" values=".15;1;.3;1;.15" dur="3.8s" repeatCount="indefinite"/>
     </circle>
