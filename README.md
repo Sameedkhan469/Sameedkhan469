@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/sameed-khan-a6824538a/"><img src="https://img.shields.io/badge/LinkedIn-Sameed_Khan-701A3D?style=for-the-badge&labelColor=190B12&logo=linkedin&logoColor=F8F0F3" alt="LinkedIn — Sameed Khan"></a>
+  <a href="https://Sameedkhan469.github.io/Sameedkhan469/"><img src="https://img.shields.io/badge/Portfolio-Open_site-701A3D?style=for-the-badge&labelColor=190B12&logo=githubpages&logoColor=F8F0F3" alt="Portfolio website"></a>
   <a href="https://github.com/Sameedkhan469?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore_projects-701A3D?style=for-the-badge&labelColor=190B12&logo=github&logoColor=F8F0F3" alt="GitHub repositories"></a>
   <a href="mailto:sameedkhan0469@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_me-701A3D?style=for-the-badge&labelColor=190B12&logo=gmail&logoColor=F8F0F3" alt="Email Sameed Khan"></a>
   <img src="https://komarev.com/ghpvc/?username=Sameedkhan469&label=Profile%20Views&color=701A3D&style=for-the-badge" alt="Profile views">
