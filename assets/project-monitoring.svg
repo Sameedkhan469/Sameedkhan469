@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="AWS EC2 monitoring project using Terraform, Prometheus, Node Exporter and Grafana">
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10162B"/><stop offset="1" stop-color="#090E1F"/></linearGradient><linearGradient id="pink" x1="0" x2="1"><stop stop-color="#60A5FA"/><stop offset="1" stop-color="#7DD3FC"/></linearGradient>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10162B"/><stop offset="1" stop-color="#090E1F"/></linearGradient><linearGradient id="accent" x1="0" x2="1"><stop stop-color="#60A5FA"/><stop offset="1" stop-color="#7DD3FC"/></linearGradient>
   <linearGradient id="fx-sheen" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#7DD3FC" stop-opacity="0"/>
     <stop offset=".48" stop-color="#7DD3FC" stop-opacity=".20"/>
