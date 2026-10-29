@@ -41,7 +41,7 @@ jobs:
       - name: Fetch the current GitHub avatar for the profile header
         run: |
           curl --fail --location --retry 3 --retry-delay 1 \
-            "https://avatars.githubusercontent.com/u/290256359?v=4" \
+            "https://avatars.githubusercontent.com/u/290256359?v=4&s=1024" \
             --output assets/sameed-avatar.png
       - name: Render heatmap, snake and statistics cards
         env:
