@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-labelledby="t d">
 <title id="t">About Sameed Khan</title><desc id="d">Systems and networking professional in Bengaluru building AWS DevOps skills through Terraform infrastructure, Jenkins pipelines and Prometheus and Grafana monitoring.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#190B12"/><stop offset="1" stop-color="#10070C"/></linearGradient><radialGradient id="glow"><stop stop-color="#701A3D" stop-opacity=".65"/><stop offset="1" stop-color="#190B12" stop-opacity="0"/></radialGradient><linearGradient id="stroke"><stop stop-color="#C77B9B"/><stop offset="1" stop-color="#451126"/></linearGradient>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10162B"/><stop offset="1" stop-color="#090E1F"/></linearGradient><radialGradient id="glow"><stop stop-color="#4F46E5" stop-opacity=".65"/><stop offset="1" stop-color="#10162B" stop-opacity="0"/></radialGradient><linearGradient id="stroke"><stop stop-color="#60A5FA"/><stop offset="1" stop-color="#1E3A8A"/></linearGradient>
   <linearGradient id="fx-sheen" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#E5B5C7" stop-opacity="0"/>
-    <stop offset=".48" stop-color="#E5B5C7" stop-opacity=".20"/>
-    <stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/>
+    <stop offset="0" stop-color="#7DD3FC" stop-opacity="0"/>
+    <stop offset=".48" stop-color="#7DD3FC" stop-opacity=".20"/>
+    <stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/>
   </linearGradient>
   <clipPath id="fx-panel-clip"><rect x="0" y="0" width="1200" height="400" rx="20"/></clipPath>
   <filter id="fx-panel-glow" x="-100%" y="-100%" width="300%" height="300%">
@@ -13,18 +13,18 @@
   </filter>
 </defs>
 <style>.mono{font-family:ui-monospace,Consolas,monospace}.sans{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}.in{animation:fade .8s ease both}.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}@media(prefers-reduced-motion:reduce){.in{animation:none}}</style>
-<rect width="1200" height="400" rx="22" fill="url(#bg)"/><rect width="1200" height="400" rx="22" fill="url(#glow)" opacity=".7"/><rect x="1" y="1" width="1198" height="398" rx="21" fill="none" stroke="#C77B9B" stroke-opacity=".28"/>
-<g class="in"><text class="mono" x="48" y="48" fill="#C77B9B" font-size="12" letter-spacing="2.5">PROFILE / 01</text><text class="serif" x="48" y="100" fill="#F8F0F3" font-size="31">Systems-minded. Cloud-focused.</text><text class="sans" x="48" y="131" fill="#B6A3AC" font-size="17">Building repeatable infrastructure and learning through hands-on labs.</text></g>
-<g class="in d1"><rect x="48" y="164" width="690" height="183" rx="14" fill="#10070C" stroke="#451126"/><circle cx="70" cy="188" r="4" fill="#FB7185"/><circle cx="84" cy="188" r="4" fill="#FBBF24"/><circle cx="98" cy="188" r="4" fill="#34D399"/><text class="mono" x="118" y="193" fill="#B6A3AC" font-size="12">sameed@cloud-lab:~$ profile</text>
-<text class="mono" x="70" y="228" fill="#E5B5C7" font-size="15">$ focus --infrastructure</text><text class="sans" x="70" y="251" fill="#F8F0F3" font-size="15">AWS networking + Terraform IaC</text>
-<text class="mono" x="70" y="280" fill="#E5B5C7" font-size="15">$ automate --delivery</text><text class="sans" x="70" y="303" fill="#F8F0F3" font-size="15">Jenkins pipelines + Maven build checks</text>
-<text class="mono" x="70" y="330" fill="#E5B5C7" font-size="15">$ observe --systems</text><text class="sans" x="320" y="330" fill="#F8F0F3" font-size="15">Prometheus · Grafana · Splunk</text></g>
-<g class="in d2"><rect x="770" y="164" width="382" height="183" rx="14" fill="#190B12" stroke="#C77B9B" stroke-opacity=".35"/><text class="mono" x="796" y="194" fill="#C77B9B" font-size="12" letter-spacing="1.5">WHAT I BRING</text>
-<circle cx="800" cy="222" r="4" fill="#E5B5C7"/><text class="sans" x="817" y="227" fill="#F8F0F3" font-size="15">Network troubleshooting</text>
-<circle cx="800" cy="254" r="4" fill="#E5B5C7"/><text class="sans" x="817" y="259" fill="#F8F0F3" font-size="15">Windows + Linux administration</text>
-<circle cx="800" cy="286" r="4" fill="#E5B5C7"/><text class="sans" x="817" y="291" fill="#F8F0F3" font-size="15">Infrastructure as Code</text>
-<circle cx="800" cy="318" r="4" fill="#E5B5C7"/><text class="sans" x="817" y="323" fill="#F8F0F3" font-size="15">Monitoring and incident diagnosis</text></g>
-<text class="mono" x="48" y="378" fill="#8F737E" font-size="11">BENGALURU, INDIA · BCA · CLOUD COMPUTING TRAINING</text>
+<rect width="1200" height="400" rx="22" fill="url(#bg)"/><rect width="1200" height="400" rx="22" fill="url(#glow)" opacity=".7"/><rect x="1" y="1" width="1198" height="398" rx="21" fill="none" stroke="#60A5FA" stroke-opacity=".28"/>
+<g class="in"><text class="mono" x="48" y="48" fill="#60A5FA" font-size="12" letter-spacing="2.5">PROFILE / 01</text><text class="serif" x="48" y="100" fill="#F4F8FF" font-size="31">Systems-minded. Cloud-focused.</text><text class="sans" x="48" y="131" fill="#C4D2E8" font-size="17">Building repeatable infrastructure and learning through hands-on labs.</text></g>
+<g class="in d1"><rect x="48" y="164" width="690" height="183" rx="14" fill="#090E1F" stroke="#1E3A8A"/><circle cx="70" cy="188" r="4" fill="#FB7185"/><circle cx="84" cy="188" r="4" fill="#FBBF24"/><circle cx="98" cy="188" r="4" fill="#34D399"/><text class="mono" x="118" y="193" fill="#C4D2E8" font-size="12">sameed@cloud-lab:~$ profile</text>
+<text class="mono" x="70" y="228" fill="#7DD3FC" font-size="15">$ focus --infrastructure</text><text class="sans" x="70" y="251" fill="#F4F8FF" font-size="15">AWS networking + Terraform IaC</text>
+<text class="mono" x="70" y="280" fill="#7DD3FC" font-size="15">$ automate --delivery</text><text class="sans" x="70" y="303" fill="#F4F8FF" font-size="15">Jenkins pipelines + Maven build checks</text>
+<text class="mono" x="70" y="330" fill="#7DD3FC" font-size="15">$ observe --systems</text><text class="sans" x="320" y="330" fill="#F4F8FF" font-size="15">Prometheus · Grafana · Splunk</text></g>
+<g class="in d2"><rect x="770" y="164" width="382" height="183" rx="14" fill="#10162B" stroke="#60A5FA" stroke-opacity=".35"/><text class="mono" x="796" y="194" fill="#60A5FA" font-size="12" letter-spacing="1.5">WHAT I BRING</text>
+<circle cx="800" cy="222" r="4" fill="#7DD3FC"/><text class="sans" x="817" y="227" fill="#F4F8FF" font-size="15">Network troubleshooting</text>
+<circle cx="800" cy="254" r="4" fill="#7DD3FC"/><text class="sans" x="817" y="259" fill="#F4F8FF" font-size="15">Windows + Linux administration</text>
+<circle cx="800" cy="286" r="4" fill="#7DD3FC"/><text class="sans" x="817" y="291" fill="#F4F8FF" font-size="15">Infrastructure as Code</text>
+<circle cx="800" cy="318" r="4" fill="#7DD3FC"/><text class="sans" x="817" y="323" fill="#F4F8FF" font-size="15">Monitoring and incident diagnosis</text></g>
+<text class="mono" x="48" y="378" fill="#91A4C6" font-size="11">BENGALURU, INDIA · BCA · CLOUD COMPUTING TRAINING</text>
 
   <style>
     .fx-motion { pointer-events:none; }
@@ -34,10 +34,10 @@
     <rect x="-280" y="0" width="280" height="400" fill="url(#fx-sheen)" opacity=".62">
       <animate attributeName="x" values="-280;1200;1200" keyTimes="0;.72;1" dur="9.5s" begin="1.1s" repeatCount="indefinite"/>
     </rect>
-    <rect x="1.5" y="1.5" width="1197" height="397" rx="19" fill="none" stroke="#C77B9B" stroke-opacity=".54" stroke-width="1.15" stroke-dasharray="58 3200">
+    <rect x="1.5" y="1.5" width="1197" height="397" rx="19" fill="none" stroke="#60A5FA" stroke-opacity=".54" stroke-width="1.15" stroke-dasharray="58 3200">
       <animate attributeName="stroke-dashoffset" values="0;-3200" dur="24s" repeatCount="indefinite"/>
     </rect>
-    <circle r="2.2" fill="#F8F0F3" filter="url(#fx-panel-glow)">
+    <circle r="2.2" fill="#F4F8FF" filter="url(#fx-panel-glow)">
       <animateMotion path="M 20 1 H 1180 Q 1199 1 1199 20 V 380 Q 1199 399 1180 399 H 20 Q 1 399 1 380 V 20 Q 1 1 20 1" dur="17s" begin=".8s" repeatCount="indefinite" rotate="auto"/>
       <animate attributeName="opacity" values=".15;1;.3;1;.15" dur="3.8s" repeatCount="indefinite"/>
     </circle>
