@@ -173,3 +173,39 @@ body.cursor-hover .custom-cursor{width:48px;height:48px;background:rgba(199,123,
 @keyframes code-glimmer{0%,100%{opacity:.78}50%{opacity:1}}
 @media(max-width:900px){.cursor-glow{background:radial-gradient(340px circle at var(--pointer-x,50%) var(--pointer-y,20%),rgba(199,123,155,.07),transparent 72%)}}
 @media(prefers-reduced-motion:reduce){.custom-cursor,.cursor-glow{display:none!important}.ambient-particles{display:none}.hero-art:before,.portrait-orbit,.visual-bars i,.code-lines,.linux-terminal .ok{animation:none!important}.project-visual:after{display:none}.project-card:hover{transform:none}}
+
+
+/* Smooth, restrained motion polish inspired by modern portfolio interactions.
+   No custom cursor: the browser's normal pointer remains visible. */
+.custom-cursor{display:none!important}
+@media(hover:hover) and (pointer:fine){
+  body,body a,body button{cursor:auto!important}
+  .project-card{transform:perspective(1100px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(0);transition:transform .48s cubic-bezier(.2,.8,.2,1),border-color .35s ease,box-shadow .48s ease}
+  .project-card:hover{transform:perspective(1100px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(-5px)}
+  .project-visual:after{content:"";position:absolute;top:-25%;bottom:-25%;left:-85%;width:55%;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(229,181,199,.08),transparent);transform:skewX(-14deg);transition:left .9s cubic-bezier(.2,.8,.2,1)}
+  .project-card:hover .project-visual:after{left:145%}
+  .button{transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .3s ease,background .3s ease,box-shadow .35s ease}
+  .button:hover{box-shadow:0 10px 28px rgba(112,26,61,.2)}
+  .toolkit-card,.fact-card,.education-panel,.about-statement{transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .35s ease,box-shadow .45s ease}
+  .toolkit-card:hover,.fact-card:hover,.education-panel:hover,.about-statement:hover{transform:translateY(-3px);border-color:var(--line2);box-shadow:0 16px 36px rgba(0,0,0,.16)}
+  .hero-skills span,.tag-list span,.tool-pills span,.learning-tags span{transition:transform .28s ease,border-color .28s ease,background .28s ease}
+  .hero-skills span:hover,.tag-list span:hover,.tool-pills span:hover,.learning-tags span:hover{transform:translateY(-2px);border-color:var(--rose);background:rgba(112,26,61,.25)}
+}
+.reveal{transition:opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}
+.project-list .project-card:nth-child(2){transition-delay:.04s}
+.project-list .project-card:nth-child(3){transition-delay:.08s}
+.project-list .project-card:nth-child(4){transition-delay:.12s}
+.project-list .project-card:nth-child(5){transition-delay:.16s}
+.project-list .project-card:nth-child(6){transition-delay:.2s}
+.hero-art .portrait-frame{animation:portrait-settle 1.1s cubic-bezier(.2,.8,.2,1) both}
+.portrait-orbit-one{animation:orbit-drift 30s linear infinite}
+.portrait-orbit-two{animation:orbit-drift 38s linear infinite reverse}
+.hero-art-caption{animation:caption-rise .9s .35s both}
+@keyframes portrait-settle{from{opacity:0;transform:translateY(14px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes caption-rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+  .reveal{will-change:auto;transition:none}
+  .project-card,.toolkit-card,.fact-card,.education-panel,.about-statement,.button{transition:none!important}
+  .hero-art .portrait-frame,.hero-art-caption{animation:none!important}
+  .project-visual:after{display:none!important}
+}
