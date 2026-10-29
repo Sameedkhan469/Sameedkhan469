@@ -7,6 +7,8 @@
   <linearGradient id="hero-metal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#C77B9B"/><stop offset=".55" stop-color="#F8F0F3"/><stop offset="1" stop-color="#C77B9B"/></linearGradient>
   <linearGradient id="hero-line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#C77B9B"/><stop offset="1" stop-color="#701A3D" stop-opacity="0"/></linearGradient>
   <pattern id="hero-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#E5B5C7" stroke-opacity=".055"/></pattern>
+  <linearGradient id="hero-scan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5B5C7" stop-opacity="0"/><stop offset=".5" stop-color="#E5B5C7" stop-opacity=".10"/><stop offset="1" stop-color="#E5B5C7" stop-opacity="0"/></linearGradient>
+  <clipPath id="hero-canvas-clip"><rect width="1200" height="430" rx="22"/></clipPath>
   <clipPath id="portrait-clip"><circle cx="970" cy="210" r="105"/></clipPath>
 </defs>
 <style>
@@ -17,18 +19,41 @@
 .a{animation:rise .9s ease both}.b{animation:rise .9s .15s ease both}.c{animation:rise .9s .3s ease both}.trace{stroke-dasharray:8 12;animation:dash 8s linear infinite}.pulse{animation:pulse 2.5s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.a,.b,.c,.trace,.pulse{animation:none}}
 </style>
-<rect width="1200" height="430" rx="22" fill="url(#hero-bg)"/><rect width="1200" height="430" rx="22" fill="url(#hero-glow)"/><rect width="1200" height="430" rx="22" fill="url(#hero-grid)"/><rect x="1" y="1" width="1198" height="428" rx="21" fill="none" stroke="#C77B9B" stroke-opacity=".38"/>
+<rect width="1200" height="430" rx="22" fill="url(#hero-bg)"/><rect width="1200" height="430" rx="22" fill="url(#hero-glow)"/><rect width="1200" height="430" rx="22" fill="url(#hero-grid)"/>
+<g clip-path="url(#hero-canvas-clip)" pointer-events="none">
+  <rect x="0" y="-90" width="1200" height="70" fill="url(#hero-scan)">
+    <animate attributeName="y" values="-90;500" dur="11s" begin="1.4s" repeatCount="indefinite"/>
+  </rect>
+  <g fill="#E5B5C7">
+    <circle cx="545" cy="128" r="1.3"><animate attributeName="opacity" values="0;.9;0" dur="4.2s" repeatCount="indefinite"/><animate attributeName="cy" values="128;103" dur="4.2s" repeatCount="indefinite"/></circle>
+    <circle cx="680" cy="72" r="1.1"><animate attributeName="opacity" values="0;.8;0" dur="5.6s" begin="1s" repeatCount="indefinite"/><animate attributeName="cy" values="72;47" dur="5.6s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="1140" cy="365" r="1.5"><animate attributeName="opacity" values="0;.9;0" dur="4.8s" begin="2s" repeatCount="indefinite"/><animate attributeName="cy" values="365;337" dur="4.8s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="418" r="1.2"><animate attributeName="opacity" values="0;.7;0" dur="6s" begin=".5s" repeatCount="indefinite"/><animate attributeName="cy" values="418;393" dur="6s" begin=".5s" repeatCount="indefinite"/></circle>
+    <circle cx="720" cy="240" r="1"><animate attributeName="opacity" values="0;.7;0" dur="4.4s" begin="2.5s" repeatCount="indefinite"/><animate attributeName="cy" values="240;216" dur="4.4s" begin="2.5s" repeatCount="indefinite"/></circle>
+  </g>
+</g><rect x="1" y="1" width="1198" height="428" rx="21" fill="none" stroke="#C77B9B" stroke-opacity=".38"/>
 <g class="a"><rect x="48" y="34" width="330" height="32" rx="16" fill="#10070C" stroke="#6C2945" stroke-opacity=".75"/><circle cx="67" cy="50" r="3.5" fill="#C77B9B"/><text class="m" x="82" y="54" fill="#F8F0F3" font-size="11">~/sameedkhan $ build --infrastructure</text><path d="M48 83H742" stroke="#451126"/></g>
 <g class="b"><text class="m" x="50" y="111" fill="#C77B9B" font-size="11" letter-spacing="3.1">CLOUD · ENGINEERING · AUTOMATION</text>
 <text class="serif" x="48" y="178" fill="#F8F0F3" font-size="61">Sameed Khan</text>
 <text class="serif" x="49" y="232" fill="url(#hero-metal)" font-size="51" font-style="italic">Cloud infrastructure.</text>
 <path d="M50 253H730" stroke="url(#hero-line)" stroke-width="1.4"/>
+<circle cx="50" cy="253" r="3" fill="#E5B5C7" opacity=".85">
+  <animate attributeName="cx" values="50;730;50" keyTimes="0;.5;1" dur="10s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values=".25;1;.25" dur="3s" repeatCount="indefinite"/>
+</circle>
 <text class="m" x="51" y="287" fill="#F8F0F3" font-size="12" letter-spacing="1.1">AWS DEVOPS · SYSTEMS ADMINISTRATION · NETWORKING</text>
 <text class="serif" x="50" y="318" fill="#B6A3AC" font-size="20" font-style="italic">Build with intent. Automate the repeatable.</text>
 <text class="m" x="50" y="354" fill="#8F737E" font-size="10.5" letter-spacing="1.1">TERRAFORM · JENKINS · PROMETHEUS · GRAFANA · SPLUNK</text></g>
 <g transform="translate(970 210)">
   <circle r="143" fill="none" stroke="#701A3D" stroke-opacity=".7"/>
   <circle r="126" fill="none" stroke="#C77B9B" stroke-opacity=".32"/>
+  <circle r="134" fill="none" stroke="#E5B5C7" stroke-opacity=".34" stroke-width="1.1" stroke-dasharray="48 795">
+    <animate attributeName="stroke-dashoffset" values="0;-843" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="-133" r="3" fill="#F8F0F3">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="2.2;3.6;2.2" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
   <circle r="113" fill="#451126" stroke="#C77B9B" stroke-width="1.4"/>
   <circle r="108" fill="#190B12"/>
 </g>
