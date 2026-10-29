@@ -20,7 +20,7 @@ function embedProfileAvatar() {
   const dataUri = "data:" + mime + ";base64," + image.toString("base64");
   let hero = fs.readFileSync(HERO_PATH, "utf8");
   const imageTag = '<image href="' + dataUri + '" xlink:href="' + dataUri + '" x="850" y="90" width="240" height="240" preserveAspectRatio="xMidYMid slice"/>';
-  hero = hero.replace(/<image\\b[^>]*\\/>/, imageTag);
+  hero = hero.replace(/<image\b[^>]*\/>/, imageTag);
   fs.writeFileSync(HERO_PATH, hero, "utf8");
   console.log("Embedded GitHub profile avatar into " + HERO_PATH + ".");
 }
