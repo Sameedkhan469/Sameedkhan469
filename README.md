@@ -52,6 +52,10 @@
 <img src="assets/title-toolkit.svg" width="100%" alt="04 Toolkit — the systems and tools I work with.">
 <img src="assets/tech-constellation.svg" width="100%" alt="Skills overview: AWS and Terraform, Jenkins and Maven, Prometheus, Grafana and Splunk, Linux and Windows, Bash, Python, Boto3, Nginx, Flask, MySQL and networking.">
 
+### GitHub Actions CI/CD
+
+<img src="assets/github-actions-pipeline.svg" width="100%" alt="GitHub Actions CloudOps CI/CD pipeline showing five successful steps: Python tests, Azure OIDC login, deployment package creation, Azure App Service deployment, and Azure sign-out.">
+
 <img src="assets/title-commits.svg" width="100%" alt="05 Contribution log — a little progress, committed.">
 
 
