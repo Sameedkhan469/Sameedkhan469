@@ -7,7 +7,7 @@
   <a href="https://Sameedkhan469.github.io/Sameedkhan469/"><img src="https://img.shields.io/badge/Portfolio-Open_site-4F46E5?style=for-the-badge&labelColor=10162B&logo=githubpages&logoColor=E0F2FE" alt="Portfolio website"></a>
   <a href="https://github.com/Sameedkhan469?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Explore_projects-4F46E5?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="GitHub repositories"></a>
   <a href="mailto:sameedkhan0469@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_me-4F46E5?style=for-the-badge&labelColor=10162B&logo=gmail&logoColor=E0F2FE" alt="Email Sameed Khan"></a>
-  <img src="https://komarev.com/ghpvc/?username=Sameedkhan469&label=Profile%20Views&color=4F46E5&style=for-the-badge" alt="Profile views">
+  <img src="https://komarev.com/ghpvc/?username=Sameedkhan469&label=Profile%20Views&color=4F46E5&labelColor=10162B&style=for-the-badge" alt="Profile views">
 </p>
 
 <img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Sameed.">
