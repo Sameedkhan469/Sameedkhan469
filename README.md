@@ -25,8 +25,6 @@
   <a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform"><img src="https://img.shields.io/badge/Repository-Cloud--Native%20DevOps%20Platform-1E3A8A?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="Cloud-Native DevOps Platform repository"></a>
 </p>
 
-> Project note: the EKS infrastructure was tested and then destroyed to avoid ongoing AWS charges. Public NodePort access was not verified; the application was tested using `kubectl port-forward`. Terraform source from the original lab is not currently included in the project repository.
-
 <a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="assets/project-monitoring.svg" width="100%" alt="AWS EC2 monitoring with Terraform, Prometheus, Node Exporter and Grafana."></a>
 <p align="center">
   <a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="https://img.shields.io/badge/Repository-EC2_Monitoring-1E3A8A?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="EC2 Monitoring repository"></a>
