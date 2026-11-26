@@ -18,22 +18,16 @@
 
 <img src="assets/title-work.svg" width="100%" alt="03 Selected work — infrastructure you can inspect.">
 
-### Cloud-Native DevOps Platform on AWS EKS
-
-A containerized Python Flask application deployed to Kubernetes on Amazon EKS. The project covers Docker, Amazon ECR, Kubernetes Deployment and NodePort Service, health probes, resource requests and limits, and Prometheus metrics with a monitoring setup for Prometheus and Grafana.
-
-**Tech stack:** AWS EKS, ECR, Docker, Kubernetes, Flask, Python, Prometheus, Grafana, Helm, GitHub Actions.
-
-- [Open the project repository](https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform)
-- [View the architecture diagram](https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform/blob/main/architecture-aws-flow-live.svg)
-- [View the project README](https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform/blob/main/README.md)
+<a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform">
+  <img src="assets/project-eks.svg" width="100%" alt="Animated project graphic: Cloud-Native DevOps Platform on AWS EKS, with Docker, ECR, Kubernetes, Flask, Prometheus and Grafana.">
+</a>
+<p align="center">
+  <a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform"><img src="https://img.shields.io/badge/Repository-Cloud--Native%20DevOps%20Platform-1E3A8A?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="Cloud-Native DevOps Platform repository"></a>
+  <a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform/blob/main/architecture-aws-flow-live.svg"><img src="https://img.shields.io/badge/Architecture-View_diagram-1E3A8A?style=for-the-badge&labelColor=10162B&logo=amazonaws&logoColor=E0F2FE" alt="View AWS architecture diagram"></a>
+  <a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform/blob/main/README.md"><img src="https://img.shields.io/badge/Documentation-Project_README-1E3A8A?style=for-the-badge&labelColor=10162B&logo=readthedocs&logoColor=E0F2FE" alt="Read project documentation"></a>
+</p>
 
 > Project note: the EKS infrastructure was tested and then destroyed to avoid ongoing AWS charges. Public NodePort access was not verified; the application was tested using `kubectl port-forward`. Terraform source from the original lab is not currently included in the project repository.
-
-
-<a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform">
-  <img src="https://img.shields.io/badge/Project-Cloud--Native%20DevOps%20Platform-1E3A8A?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="Cloud-Native DevOps Platform project repository">
-</a>
 
 <a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="assets/project-monitoring.svg" width="100%" alt="AWS EC2 monitoring with Terraform, Prometheus, Node Exporter and Grafana."></a>
 <p align="center">
