@@ -18,6 +18,10 @@
 
 <img src="assets/title-work.svg" width="100%" alt="03 Selected work — infrastructure you can inspect.">
 
+<a href="https://github.com/Sameedkhan469/Cloud-Native-DevOps-Platform">
+  <img src="https://img.shields.io/badge/Project-Cloud--Native%20DevOps%20Platform-1E3A8A?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="Cloud-Native DevOps Platform project repository">
+</a>
+
 <a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="assets/project-monitoring.svg" width="100%" alt="AWS EC2 monitoring with Terraform, Prometheus, Node Exporter and Grafana."></a>
 <p align="center">
   <a href="https://github.com/Sameedkhan469/Grafana-Prometheus"><img src="https://img.shields.io/badge/Repository-EC2_Monitoring-1E3A8A?style=for-the-badge&labelColor=10162B&logo=github&logoColor=E0F2FE" alt="EC2 Monitoring repository"></a>
