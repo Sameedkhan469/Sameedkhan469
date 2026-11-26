@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Cloud-native DevOps platform on AWS EKS with Docker, ECR, Kubernetes, Flask, Prometheus and Grafana">
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10162B"/><stop offset="1" stop-color="#080D1C"/></linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7DD3FC" stop-opacity="0"/><stop offset=".5" stop-color="#7DD3FC" stop-opacity=".18"/><stop offset="1" stop-color="#7DD3FC" stop-opacity="0"/></linearGradient>
+  <clipPath id="clip"><rect width="1200" height="360" rx="20"/></clipPath>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+.m{font-family:ui-monospace,Consolas,monospace}.s{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}
+.fx{pointer-events:none}
+@media (prefers-reduced-motion:reduce){.fx{display:none}}
+</style>
+<rect width="1200" height="360" rx="20" fill="url(#bg)" stroke="#60A5FA" stroke-opacity=".35"/>
+<text class="m" x="34" y="35" fill="#60A5FA" font-size="11" letter-spacing="2">PROJECT / CLOUD-NATIVE ENGINEERING</text>
+<text class="serif" x="34" y="79" fill="#F4F8FF" font-size="33">Cloud-native DevOps platform on AWS EKS</text>
+<text class="s" x="34" y="108" fill="#C4D2E8" font-size="15">Containerize · deploy · monitor — a hands-on Kubernetes lab</text>
+<g transform="translate(34 132)">
+  <rect width="250" height="116" rx="12" fill="#10162B" stroke="#60A5FA"/>
+  <text class="m" x="18" y="25" fill="#60A5FA" font-size="11">01 / PACKAGE</text>
+  <text class="serif" x="18" y="55" fill="#F4F8FF" font-size="23">Docker + ECR</text>
+  <text class="s" x="18" y="81" fill="#C4D2E8" font-size="14">Build image</text>
+  <text class="s" x="18" y="100" fill="#C4D2E8" font-size="14">Push to registry</text>
+</g>
+<g transform="translate(316 132)">
+  <rect width="250" height="116" rx="12" fill="#10162B" stroke="#60A5FA"/>
+  <text class="m" x="18" y="25" fill="#60A5FA" font-size="11">02 / ORCHESTRATE</text>
+  <text class="serif" x="18" y="55" fill="#F4F8FF" font-size="23">Amazon EKS</text>
+  <text class="s" x="18" y="81" fill="#C4D2E8" font-size="14">Deployment · NodePort</text>
+  <text class="s" x="18" y="100" fill="#C4D2E8" font-size="14">Probes · resource limits</text>
+</g>
+<g transform="translate(598 132)">
+  <rect width="250" height="116" rx="12" fill="#10162B" stroke="#60A5FA"/>
+  <text class="m" x="18" y="25" fill="#60A5FA" font-size="11">03 / SERVE</text>
+  <text class="serif" x="18" y="55" fill="#F4F8FF" font-size="23">Flask API</text>
+  <text class="s" x="18" y="81" fill="#C4D2E8" font-size="14">Python application</text>
+  <text class="s" x="18" y="100" fill="#C4D2E8" font-size="14">Health + metrics</text>
+</g>
+<g transform="translate(880 132)">
+  <rect width="286" height="116" rx="12" fill="#10162B" stroke="#60A5FA"/>
+  <text class="m" x="18" y="25" fill="#60A5FA" font-size="11">04 / OBSERVE</text>
+  <text class="serif" x="18" y="55" fill="#F4F8FF" font-size="23">Prometheus + Grafana</text>
+  <text class="s" x="18" y="81" fill="#C4D2E8" font-size="14">Scrape application metrics</text>
+  <text class="s" x="18" y="100" fill="#C4D2E8" font-size="14">Explore dashboards</text>
+</g>
+<g stroke="#60A5FA" stroke-opacity=".7" fill="none" stroke-width="1.5">
+  <path d="M284 190H316"/><path d="M566 190H598"/><path d="M848 190H880"/>
+  <path d="M309 185l7 5-7 5"/><path d="M591 185l7 5-7 5"/><path d="M873 185l7 5-7 5"/>
+</g>
+<path d="M34 270H1166" stroke="#1E3A8A"/>
+<text class="m" x="34" y="296" fill="#C4D2E8" font-size="12">STACK: AWS EKS · ECR · DOCKER · KUBERNETES · FLASK · PROMETHEUS · GRAFANA · HELM · GITHUB ACTIONS</text>
+<text class="s" x="34" y="324" fill="#7F9BC4" font-size="13">Hands-on lab · tested on EKS · infrastructure cleaned up after testing</text>
+<g class="fx" clip-path="url(#clip)" pointer-events="none">
+  <rect x="-260" y="0" width="260" height="360" fill="url(#sheen)" opacity=".7"><animate attributeName="x" values="-260;1200;1200" keyTimes="0;.72;1" dur="9s" begin=".6s" repeatCount="indefinite"/></rect>
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="19" fill="none" stroke="#60A5FA" stroke-opacity=".48" stroke-width="1.15" stroke-dasharray="58 3040"><animate attributeName="stroke-dashoffset" values="0;-3040" dur="23s" repeatCount="indefinite"/></rect>
+  <circle r="2.4" fill="#F4F8FF" filter="url(#glow)"><animateMotion path="M20 1H1180Q1199 1 1199 20V340Q1199 359 1180 359H20Q1 359 1 340V20Q1 1 20 1" dur="17s" begin=".7s" repeatCount="indefinite" rotate="auto"/><animate attributeName="opacity" values=".2;1;.35;1;.2" dur="3.6s" repeatCount="indefinite"/></circle>
+</g>
+</svg>
